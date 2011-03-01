@@ -1,18 +1,19 @@
-# If you know what you are doing, you can simply execute this script.
-# 
+# If you know what you are doing simply execute this as a shell script
+#
 # Note that perl-support needs Perl::Tags that can be found here: 
 # http://search.cpan.org/~osfameron/Perl-Tags-0.23/lib/Perl/Tags.pm
+#
 #
 # Installation:
 
     git clone git://github.com/cako/myvim.git ~/.vim
 
-# Create symlinks:
+# Create symlink:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
 # Switch to the ~/.vim directory, and fetch submodules:
-
-    cd ~/.vim
-    git submodule init
-    git submodule update
+# Submodules are not yet implemented
+#    cd ~/.vim
+#    git submodule init
+#    git submodule update
