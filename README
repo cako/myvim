@@ -1,0 +1,14 @@
+# If you know what you are doing, you can simply execute this script.
+# Installation:
+
+git clone git://github.com/cako/myvim.git ~/.vim
+
+# Create symlinks:
+
+ln -s ~/.vim/vimrc ~/.vimrc
+
+# Switch to the ~/.vim directory, and fetch submodules:
+
+cd ~/.vim
+git submodule init
+git submodule update
