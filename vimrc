@@ -6,11 +6,28 @@ call pathogen#helptags()
 filetype plugin on 
 set nocompatible
 
+"Set key for html
+au BufRead,BufNewFile *	if &ft == 'html' | imap <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR> |  map <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR>| endif
+
+"Easy compiling for LaTeX
+au BufRead,BufNewFile *	if &ft == 'tex' | imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv | map <F2> ;w<CR><localleader>ll<localleader>lv | endif
+
+"Set correct ã for tex
+imap <localleader>a <C-K>a?
+imap <C-a> <C-K>a^
+imap <C-e> <C-K>e'
+
+"Set t as newtab
+map <C-t> <Esc>;tabnew 
+
+"Past from clipboard
+imap <C-v> <C-R>+
+
 "Set spellcheck
 set spell
-setlocal spell spelllang=en_us
-"setlocal spell spelllang=pt_br
-set spellsuggest=best,10
+"setlocal spell spelllang=en_us
+setlocal spell spelllang=pt_br
+set spellsuggest=best,3
 
 "Line numbering
 set nu
@@ -70,4 +87,3 @@ set wildmode=list:longest
 "Swap ; and :
 noremap ; :
 noremap : ;
-
