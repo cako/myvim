@@ -6,16 +6,11 @@ call pathogen#helptags()
 filetype plugin on 
 set nocompatible
 
-"Set key for html
-au BufRead,BufNewFile *	if &ft == 'html' | imap <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR> |  map <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR>| endif
+"Tex commands
+au BufNewFile,BufRead *.tex call TexCommands()
 
-"Easy compiling for LaTeX
-au BufRead,BufNewFile *	if &ft == 'tex' | imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv | map <F2> ;w<CR><localleader>ll<localleader>lv | endif
-
-"Set correct ã for tex
-imap <localleader>a <C-K>a?
-imap <C-a> <C-K>a^
-imap <C-e> <C-K>e'
+"Html commands
+au BufNewFile,BufRead *.html call HtmlCommands()
 
 "Set t as newtab
 map <C-t> <Esc>;tabnew 
@@ -63,12 +58,6 @@ set mouse=a
 set showmode
 "set wrapmargin=10
 
-"FOR LATEX
-set grepprg=grep\ -nH\ $*
-filetype indent on
-set iskeyword+=:
-"END LATEX
-
 "Run bindings
 map <F2> <Esc>;w<Enter><Esc>;!./%<Enter>
 imap <F2> <Esc>;w<Enter><Esc>;!./%<Enter>
@@ -87,3 +76,28 @@ set wildmode=list:longest
 "Swap ; and :
 noremap ; :
 noremap : ;
+
+
+function TexCommands()
+    imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv 
+    map <F2> ;w<CR><localleader>ll<localleader>lv
+
+    imap <F3> <Esc>;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
+    map <F3> ;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
+
+
+    imap <localleader>a <C-K>a?
+    imap <C-a> <C-K>a^
+    imap <C-e> <C-K>e'
+
+    "For vim-latex
+    set grepprg=grep\ -nH\ $*
+    filetype indent on
+    set iskeyword+=:
+endfunction
+
+function HtmlCommands()
+    imap <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR>
+    map <leader>f ;w<CR><Esc>;!firefox % &<CR>
+endfunction    
+
