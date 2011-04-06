@@ -6,23 +6,35 @@ call pathogen#helptags()
 filetype plugin on 
 set nocompatible
 
-"Tex commands
-au BufNewFile,BufRead *.tex call TexCommands()
-
-"Html commands
-au BufNewFile,BufRead *.html call HtmlCommands()
-
-"Set t as newtab
-map <C-t> <Esc>;tabnew 
-
-"Past from clipboard
-imap <C-v> <C-R>+
-
 "Set spellcheck
 set spell
 "setlocal spell spelllang=en_us
 setlocal spell spelllang=pt_br
 set spellsuggest=best,3
+map <leader>z ]sz=1<CR><CR>
+
+ "Tex commands
+au BufNewFile,BufRead *.tex call TexCommands()
+
+"Html commands
+au BufNewFile,BufRead *.html call HtmlCommands()
+
+"Control tab
+map <C-Tab> ;tabnext<CR>
+
+"Set t as newtab
+map <C-t> <Esc>;tabnew 
+
+"NERDTree
+map <F9> ;NERDTreeToggle<CR>
+imap <F9> <Esc>;NERDTreeToggle<CR>
+
+"Past from clipboard
+imap <C-v> <C-R>+
+
+
+"Colorscheme
+colorscheme peachpuff
 
 "Line numbering
 set nu
@@ -62,10 +74,6 @@ set showmode
 map <F2> <Esc>;w<Enter><Esc>;!./%<Enter>
 imap <F2> <Esc>;w<Enter><Esc>;!./%<Enter>
                     
-"Autocomplete bindings
-"imap <Tab> <C-N>
-
-
 "Change working directory to current file, except if it's /tmp
 autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | lcd %:p:h | endif
 
