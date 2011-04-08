@@ -14,14 +14,15 @@ filetype plugin on
 set nocompatible 
 au BufNewFile,BufRead *.tex call TexCommands()
 au BufNewFile,BufRead *.html call HtmlCommands()
+au BufNewFile,BufRead *.py call PythonCommands()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 "               Mappings and such              
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-map <C-Tab> ;tabnext<CR>
-map <C-t> <Esc>;tabnew 
+" Choose best suggestion and replace word with it
+map <leader>z ]sz=1<CR><CR>
 
 "Paste from clipboard
 imap <C-v> <C-R>+
@@ -29,8 +30,15 @@ imap <C-v> <C-R>+
 map <F9> ;NERDTreeToggle<CR>
 imap <F9> <Esc>;NERDTreeToggle<CR>
 
-map <F2> <Esc>;w<Enter><Esc>;!./%<Enter>
-imap <F2> <Esc>;w<Enter><Esc>;!./%<Enter>
+map <F2> ;w<CR><Esc>;!chmod a+x %<CR><Esc>;!./%<CR>
+imap <F2> <Esc>;w<CR><Esc>;!chmod a+x %<CR><Esc>;!./%<CR>
+
+map <C-Tab> ;tabnext<CR>
+map <C-t> <Esc>;tabnew 
+map <leader>vim ;tabnew ~/.vimrc<CR>
+
+noremap ; :
+noremap : ;
 
 colorscheme PapayaWhip
 
@@ -41,6 +49,8 @@ colorscheme PapayaWhip
 
 syntax on
 set number
+
+set spellsuggest=best,3
 
 set incsearch
 set ignorecase
@@ -59,9 +69,6 @@ set expandtab
 set virtualedit=all
 set mouse=a
                    
-noremap ; :
-noremap : ;
-
 "Change working directory to current file, except if it's /tmp
 autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | lcd %:p:h | endif
 
@@ -78,10 +85,7 @@ function TexCommands()
     set spell
     "setlocal spell spelllang=en_us
     setlocal spell spelllang=pt_br
-    set spellsuggest=best,3
     
-    " Choose best suggestion and replace word with it
-    map <leader>z ]sz=1<CR><CR>
      
     imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv 
     map <F2> ;w<CR><localleader>ll<localleader>lv
@@ -104,4 +108,10 @@ endfunction
 function HtmlCommands()
     imap <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR>
     map <leader>f ;w<CR><Esc>;!firefox % &<CR>
-endfunction    
+endfunction
+
+function PythonCommands()
+    command! -nargs=0 Pydoc exe '!pydoc' @"
+    map  <localleader>pd yiw;Pydoc<CR>
+    imap <localleader>pd <Esc>yiw;Pydoc<CR>
+endfunction  

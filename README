@@ -11,6 +11,7 @@
 # Create symlink:
 
     ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/bundle/perl-support/perl-support ~/.vim/perl-support
 
 # Switch to the ~/.vim directory, and fetch submodules:
 # Submodules are not yet implemented
