@@ -114,4 +114,8 @@ function PythonCommands()
     command! -nargs=0 Pydoc exe '!pydoc' @"
     map  <localleader>pd yiw;Pydoc<CR>
     imap <localleader>pd <Esc>yiw;Pydoc<CR>
+    map <F3> ;w<CR>;!chmod a+x<CR>;!python 
+    imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!python 
+    map <M-F3> ;w<CR>;!python<Up><CR>
+    imap <M-F3> <Esc>;w<CR><Esc>;!python<Up><CR>
 endfunction  
