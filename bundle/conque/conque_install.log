@@ -1,0 +1,29 @@
+extracted <plugin/conque_term.vim>: 208 lines
+wrote /home/cako/.vim/plugin/conque_term.vim
+extracted <autoload/conque_term.vim>: 1494 lines
+wrote /home/cako/.vim/autoload/conque_term.vim
+extracted <autoload/conque_term/conque_globals.py>: 319 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_globals.py
+extracted <autoload/conque_term/conque.py>: 1141 lines
+wrote /home/cako/.vim/autoload/conque_term/conque.py
+extracted <autoload/conque_term/conque_screen.py>: 230 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_screen.py
+extracted <autoload/conque_term/conque_sole_communicator.py>: 183 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_sole_communicator.py
+extracted <autoload/conque_term/conque_sole.py>: 458 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_sole.py
+extracted <autoload/conque_term/conque_sole_shared_memory.py>: 210 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_sole_shared_memory.py
+extracted <autoload/conque_term/conque_sole_subprocess.py>: 762 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_sole_subprocess.py
+extracted <autoload/conque_term/conque_sole_wrapper.py>: 278 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_sole_wrapper.py
+extracted <autoload/conque_term/conque_subprocess.py>: 198 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_subprocess.py
+extracted <autoload/conque_term/conque_win32_util.py>: 448 lines
+wrote /home/cako/.vim/autoload/conque_term/conque_win32_util.py
+extracted <doc/conque_term.txt>: 645 lines
+wrote /home/cako/.vim/doc/conque_term.txt
+extracted <syntax/conque_term.vim>: 113 lines
+wrote /home/cako/.vim/syntax/conque_term.vim
+did helptags 
