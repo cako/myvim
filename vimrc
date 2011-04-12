@@ -34,6 +34,8 @@ map <F2> ;w<CR><Esc>;!chmod a+x %<CR><Esc>;!./%<CR>
 imap <F2> <Esc>;w<CR><Esc>;!chmod a+x %<CR><Esc>;!./%<CR>
 
 map <C-Tab> ;tabnext<CR>
+map <S-C-Tab> ;tabprevious<CR>
+
 map <C-t> <Esc>;tabnew 
 map <leader>vim ;tabnew ~/.vimrc<CR>
 
