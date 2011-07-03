@@ -13,3 +13,12 @@
 [submodule "autoload"]
 	path = autoload
 	url = https://github.com/paulnicholson/vim-pathogen.git
+[submodule "bundle/pydiction"]
+	path = bundle/pydiction
+	url = https://github.com/vim-scripts/Pydiction
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "bundle/w3cvalidate"]
+	path = bundle/w3cvalidate
+	url = https://github.com/dekomote/w3cvalidate.vim.git

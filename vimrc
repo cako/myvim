@@ -7,22 +7,23 @@ call pathogen#helptags()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-"               Filetype       
+"               Filetype
 """"""""""""""""""""""""""""""""""""""""""""""""
- 
-filetype plugin on 
-set nocompatible 
-au BufNewFile,BufRead *.tex call TexCommands()
-au BufNewFile,BufRead *.html call HtmlCommands()
-au BufNewFile,BufRead *.py call PythonCommands()
 
+filetype plugin on
+set nocompatible
+au BufRead,BufNewFile *.tex call TexCommands()
+au BufRead,BufNewFile *.html,*.htm,*.xhtml call HtmlCommands()
+au BufRead,BufNewFile *.py call PythonCommands()
+au FileType python compiler pylint
+"au BufWritePost *.py !pyflakes %
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-"               Mappings and such              
+"               Mappings and such
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Choose best suggestion and replace word with it
-map <leader>z ]sz=1<CR><CR>
+map <leader>z bb]sz=1<CR><CR>
 
 "Paste from clipboard
 imap <C-v> <C-R>+
@@ -42,11 +43,11 @@ map <leader>vim ;tabnew ~/.vimrc<CR>
 noremap ; :
 noremap : ;
 
-colorscheme PapayaWhip
+colorscheme desert
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-"               Set              
+"               Set
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 syntax on
@@ -67,10 +68,11 @@ set softtabstop=4
 set shiftwidth=4
 "set wrapmargin=10
 set expandtab
+set listchars=eol:$,tab:>-,trail:▹,extends:>,precedes:<
 
 set virtualedit=all
 set mouse=a
-                   
+
 "Change working directory to current file, except if it's /tmp
 autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | lcd %:p:h | endif
 
@@ -78,23 +80,20 @@ autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | lcd %:p:h | endif
 set wildmenu
 set wildmode=list:longest
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""
-"               Functions       
+"               Functions
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 function TexCommands()
     set spell
     "setlocal spell spelllang=en_us
     setlocal spell spelllang=pt_br
-    
-     
+
     imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv 
     map <F2> ;w<CR><localleader>ll<localleader>lv
 
     imap <F3> <Esc>;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
     map <F3> ;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
-
 
     imap <localleader>a <C-K>a?
     imap <C-a> <C-K>a^
@@ -104,20 +103,29 @@ function TexCommands()
     set grepprg=grep\ -nH\ $*
     filetype indent on
     set iskeyword+=:
+
+    set dictionary=~/.vim/bundle/vim-latex/ftplugin/latex-suite/dictionaries/dictionary
+    set complete+=k
 endfunction
 
-
 function HtmlCommands()
-    imap <leader>f <Esc>;w<CR><Esc>;!firefox % &<CR>
-    map <leader>f ;w<CR><Esc>;!firefox % &<CR>
+    imap <F2> <Esc>;w<CR><Esc>;!firefox % &<CR>
+    map <F2> ;w<CR><Esc>;!firefox % &<CR>
 endfunction
 
 function PythonCommands()
-    command! -nargs=0 Pydoc exe '!pydoc' @"
+    set noignorecase
+    set list
+    set textwidth=80
+
+    command! -nargs=0 Pydoc exe '!pydoc' @
     map  <localleader>pd yiw;Pydoc<CR>
     imap <localleader>pd <Esc>yiw;Pydoc<CR>
-    map <F3> ;w<CR>;!chmod a+x<CR>;!python 
-    imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!python 
+    map <F3> ;w<CR>;!chmod a+x<CR>;!python %
+    imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!python %
     map <M-F3> ;w<CR>;!python<Up><CR>
     imap <M-F3> <Esc>;w<CR><Esc>;!python<Up><CR>
-endfunction  
+    map <localleader>li ;set invlist<CR>
+
+    let g:pydiction_location = '~/.vim/bundle/after/ftplugin/pydiction/complete-dict'
+endfunction
