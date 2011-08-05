@@ -15,6 +15,7 @@ set nocompatible
 au BufRead,BufNewFile *.tex call TexCommands()
 au BufRead,BufNewFile *.html,*.htm,*.xhtml call HtmlCommands()
 au BufRead,BufNewFile *.py call PythonCommands()
+au BufRead,BufNewFile *.pl call PerlCommands()
 au FileType python compiler pylint
 "au BufWritePost *.py !pyflakes %
 
@@ -25,7 +26,8 @@ au FileType python compiler pylint
 " Choose best suggestion and replace word with it
 map <leader>z bb]sz=1<CR><CR>
 
-"Paste from clipboard
+"System clipboard interation
+vmap <C-c> "+y
 imap <C-v> <C-R>+
 
 map <F9> ;NERDTreeToggle<CR>
@@ -43,7 +45,12 @@ map <leader>vim ;tabnew ~/.vimrc<CR>
 noremap ; :
 noremap : ;
 
-colorscheme desert
+if has("gui_running")
+    colorscheme PapayaWhip
+else
+    colorscheme desert
+endif
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -109,8 +116,11 @@ function TexCommands()
 endfunction
 
 function HtmlCommands()
-    imap <F2> <Esc>;w<CR><Esc>;!firefox % &<CR>
     map <F2> ;w<CR><Esc>;!firefox % &<CR>
+    imap <F2> <Esc>;w<CR><Esc>;!firefox % &<CR>
+    map <F3> ;w<CR><Esc>;W3cValidate<CR>
+    imap <F3> <Esc>;w<CR><Esc>;W3cValidate<CR>
+
 endfunction
 
 function PythonCommands()
@@ -128,4 +138,11 @@ function PythonCommands()
     map <localleader>li ;set invlist<CR>
 
     let g:pydiction_location = '~/.vim/bundle/after/ftplugin/pydiction/complete-dict'
+endfunction
+
+function PerlCommands()
+    map <F3> ;w<CR>;!chmod a+x<CR>;!./% 
+    imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!./% 
+    map <M-F3> ;w<CR>;!./%<Up><CR>
+    imap <M-F3> <Esc>;w<CR><Esc>;!./<Up><CR>
 endfunction
