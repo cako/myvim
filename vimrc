@@ -16,6 +16,7 @@ au BufRead,BufNewFile *.tex call TexCommands()
 au BufRead,BufNewFile *.html,*.htm,*.xhtml call HtmlCommands()
 au BufRead,BufNewFile *.py call PythonCommands()
 au BufRead,BufNewFile *.pl call PerlCommands()
+au BufRead,BufNewFile *.md set ft=mkd
 au FileType python compiler pylint
 "au BufWritePost *.py !pyflakes %
 
