@@ -19,7 +19,11 @@
     git submodule update
 
 # Currently, these are registered as submodules:
-#     nerdtree
-#     zen-coding
-#     supertab
-#     pathogen
+#    pathogen
+#    easymotion
+#    nercommenter
+#    nerdtree
+#    supertab
+#    vim-markdown
+#    w3cvalidate
+#    zen-coding

@@ -7,14 +7,14 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/easymotion"]
-	path = bundle/easymotion
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "autoload"]
 	path = autoload
 	url = https://github.com/paulnicholson/vim-pathogen.git
-[submodule "bundle/pydiction"]
-	path = bundle/pydiction
+[submodule "bundle/Pydiction"]
+	path = bundle/Pydiction
 	url = https://github.com/vim-scripts/Pydiction
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter

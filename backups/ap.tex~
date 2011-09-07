@@ -1,0 +1,313 @@
+\documentclass[mathserif]{beamer}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{units}
+\usepackage{color}
+\let\Tiny=\tiny
+
+
+\newcommand{\philfehl}[1]{(Phillip and Fehler, 1991, p. #1)}
+\newcommand{\mps}[1]{(Meyerholtz et al., 1989, p. #1)}
+\newcommand{\dif}{\,\text{d}}
+\newcommand{\ut}[1]{\underset{\widetilde{}}{\mathbf{#1}}\phantom{}}
+
+
+\usetheme{Antibes}
+
+\title[Supressão Convolucional em Tomografia Sísmica]{Supressão Convolucional em Tomografia Sísmica}
+\author{Carlos Alberto da Costa Filho}
+\institute{IMECC -- Unicamp}
+\date{\today}
+
+%\setbeamertemplate{caption}[numbered]
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{O Problema}
+\subsection{Geral}
+\begin{frame}
+    \frametitle{O Problema geral}
+    \begin{itemize}
+        \item A tomografia sísmica consiste em estimar propriedades físicas da terra.
+        \pause
+        \vfill\item Uma propriedade comum é a velocidade de propagação de ondas P.
+        \pause
+        \vfill\item É difícil controlar a regularidade da obtenção de dados.
+        \pause
+        \vfill\item Os dados têm ruídos e podem ser irregulares, diferente de tomografia computadorizada, onde a geometria dos receptores e fontes pode ser controlada.
+        \pause
+        \vfill\item Estes erros geram ``artefatos'' na imagem que podem ser mal interpretados (veremos exemplos).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Teoria}
+    \begin{itemize}
+        \item Área com distribuição de vagarosidade desconhecida.
+        \pause
+        \vfill\item Tomografia de tempo de trânsito: buscamos velocidades em função da posição usando o tempo de trânsito das ondas.
+        \pause
+        \vfill\item Podemos relacionar $M$ tempos de trânsito com a vagarosidade da seguinte forma:
+        \begin{equation}\label{eq:integral}
+            t_i = \int_{\Gamma_i} u(r)\dif s
+        \end{equation}
+        \pause
+        Temos equações não lineares: 
+        \begin{itemize}
+            \item $t_i =$ tempo de trânsito $i$;
+            \item $u(r) =$ vagarosidade em função da posição;
+            \item $\Gamma_i =$ caminho percorrido pelo raio $i$ (depende de $u$).
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Simplificações}
+    \begin{itemize}
+        \item Vamos linearizar $u(r)$ na equação \ref{eq:integral}.
+            \begin{equation}\label{eq:traveltime}
+                t_i = \int_{\Gamma_i}u_0(r)\dif s + \int_{\Gamma_i} \delta u(r)\dif s
+            \end{equation}
+        \pause
+        \vfill\item Com $u_0(r) \equiv u_0$ constante, os caminhos $\Gamma_i$ viram linhas, retas.
+        Reescrevendo a equação \ref{eq:traveltime}:
+            \begin{equation}\label{eq:resid_cont}
+                d_i \equiv \int_{\Gamma_i} \delta u(r)\dif s = t_i - \int_{\Gamma_i} u_0 \dif s
+            \end{equation}
+        \pause
+        \vfill\item A teoria de raios é válida.
+            \begin{itemize}
+                \item A frente de onda se comporta como um raio.
+                \item Não há refração.
+                \item Não há difração.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exemplo}
+    Vamos dividir a área em células discretas nas quais a velocidade é constante.
+    Em seguida, vamos atravessar raios pela região e medir seu tempo de trânsito.
+    \begin{columns}
+        \begin{column}{0.35\linewidth}
+            \begin{tikzpicture}[scale=1]
+                \draw (0, 0) grid (3, 3);
+                \draw [|-|] (2, 3.2) -- node[above]{\scriptsize $h$} (3, 3.2);
+                \draw [|-|] (3.2, 3) -- node[right]{\scriptsize $h$} (3.2, 2);
+                \begin{scope}[black]
+                    \filldraw (0, 2.5) circle (1.5pt);
+                    \draw [semithick, ->] (0, 2.5) -- (3, 2.5);
+                    \filldraw (0.5, 3) circle (1.5pt);
+                    \draw [semithick, ->] (0.5, 3) -- (0.5, 0);
+                \end{scope}
+                \begin{scope}[blue]
+                    \filldraw (0, 1.5) circle (1.5pt);
+                    \draw [semithick, ->] (0, 1.5) -- (3, 1.5);
+                    \filldraw (1.5, 3) circle (1.5pt);
+                    \draw [semithick, ->] (1.5, 3) -- (1.5, 0);
+                \end{scope}
+                \begin{scope}[red]
+                    \filldraw (0, 0.5) circle (1.5pt);
+                    \draw [semithick, ->] (0, 0.5) -- (3, 0.5);
+                    \filldraw (2.5, 3) circle (1.5pt);
+                    \draw [semithick, ->] (2.5, 3) -- (2.5, 0);
+                \end{scope}
+                \draw[white,very thin] (0.2, 2.25) -- node[above,black,fill=white]{\tiny $\tilde{m}_1$} (0.8, 2.25);
+                \draw[gray, very thin] (0.2, 2.25) rectangle (0.8, 2.69);
+                \draw[white,very thin] (1.2, 2.25) -- node[above,black,fill=white]{\tiny $\tilde{m}_2$} (1.8, 2.25);
+                \draw[gray, very thin] (1.2, 2.25) rectangle (1.8, 2.69);
+                \draw[white,very thin] (2.2, 0.25) -- node[above,black,fill=white]{\tiny $\tilde{m}_9$} (2.8, 0.25);
+                \draw[gray, very thin] (2.2, 0.25) rectangle (2.8, 0.69);
+            \end{tikzpicture}
+        \end{column}
+        \pause
+        \begin{column}{0.65\linewidth}
+            \small
+            \begin{equation}\label{eq:ex}
+                h\begin{bmatrix}
+1 & 1               & 1               &                 &                 &                &   &                 &                \\
+  & {\color{blue}1} & {\color{blue}1} & {\color{blue}1} &                 &                &   &                 &                \\
+  &                 & {\color{red}1}  & {\color{red}1}  & {\color{red}1}  &                &   &                 &                \\
+1 &                 &                 & 1               &                 &                & 1 &                 &                \\
+  & {\color{blue}1} &                 &                 & {\color{blue}1} &                &   & {\color{blue}1} &                \\
+  &                 & {\color{red}1}  &                 &                 & {\color{red}1} &   &                 & {\color{red}1} \\
+                \end{bmatrix}
+                \begin{bmatrix}
+                    \tilde{m}_1\\
+                    \tilde{m}_2\\
+                    \tilde{m}_3\\
+                    \tilde{m}_4\\
+                    \tilde{m}_5\\
+                    \tilde{m}_6\\
+                    \tilde{m}_7\\
+                    \tilde{m}_8\\
+                    \tilde{m}_9\\
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                    t_1\\
+                    t_2\\
+                    t_3\\
+                    t_4\\
+                    t_5\\
+                    t_6\\
+                \end{bmatrix}
+            \end{equation}   
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{O problema discretizado}
+    \begin{itemize}
+        \item Podemos descrever o problema como encontrar $\mathbf{\tilde{m}}$ tal que
+        \begin{equation}\label{eq:naoreduz}
+            \ut{G}\mathbf{\tilde{m}} = \mathbf{t}.
+        \end{equation}
+        \pause
+        \vfill\item Este é o problema não reduzido. Não vamos fazer isso.
+        \pause
+        \vfill\item Lembre que temos uma aproximação $u_0$ para $u(r)$.
+        Vamos substituir $\tilde{m}_i$ por $m_i + u_0$, onde $m_i$ é a vagarosidade relativa à velocidade de fundo $u_0$.
+        \begin{equation}\label{eq:resid_disc}
+            \ut{G}\mathbf{m} = \mathbf{t} - \ut{G}\mathbf{u_0} 
+        \end{equation}
+        \pause
+        \vfill\item Vamos comparar com a equação \ref{eq:resid_cont}
+        \[d_i \equiv \int_{\Gamma_i} \delta u(r)\dif s = t_i - \int_{\Gamma_i} u_0 \dif s\]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{O problema discretizado}
+    \begin{itemize}
+        \item Definindo o vetor $\mathbf{d} = \mathbf{t} - \ut{G}\mathbf{u_0}$,
+        o problema é encontrar $\mathbf{m}$ tal que 
+        \begin{equation}\label{eq:reduz}
+            \ut{G}\mathbf{m} = \mathbf{d}.
+        \end{equation}
+        \pause
+        \vspace{-0.8cm}\item Observações:
+        \begin{itemize}
+            \item Fizemos um pequeno exemplo, mas esta é a forma típica do problema (Menke, 1984).
+            \pause
+            \item O vetor $\mathbf{d}$ é o vetor de tempos de trânsito residuais.
+            \pause
+            \item O vetor $\mathbf{m}$ é o vetor de vagarosidades relativas à $u_0$.
+            \pause
+            \item A matriz $\ut{G}$ tem tamanho $M\times N$, onde $M$ é o número de tempos de trânsito (ou de raios)
+            e $N$ é o número de células. Em problemas reais $M>N$.
+            Seus elementos $G_{ij}$ são os comprimentos dos segmentos dos raios $\Gamma_i$
+            que atravessam a célula $j$. A matrix $\ut{G}$ é esparsa já que cada raio atravessa apenas um número pequeno de células.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\subsection{Específico}
+\begin{frame}
+    \frametitle{Modelos sintéticos}
+    \begin{itemize}
+        \item Um modelo sintético é uma coleção de dados manufaturados.
+        \pause
+        \vfill\item Modelos sintéticos são preferíveis para fins de estudo já que o
+        resultado pode ser comparado com o modelo verdadeiro.
+        \pause
+        \vfill\item Depois de testar com modelos sintéticos, pode-se testar com dados reais. Não faremos isso.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Nosso modelo}
+    Usaremos o seguinte modelo sintético.
+    \begin{columns}
+        \begin{column}{0.62\linewidth}
+            \begin{figure}[h]
+                \includegraphics[height=5.0cm]{model.png}
+                \caption{Modelo sintético usado nas simulações \mps{572}.}
+            \end{figure}
+        \end{column}
+        \pause
+        \begin{column}{0.38\linewidth}
+        \vspace{-1cm}
+            \begin{itemize}
+                \item O fundo representa uma velocidade de \unitfrac[4572]{m}{s}.
+                \pause
+                \item As anomalias na velocidade seguem a escala acima da figura.
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Nosso modelo}
+    Os tempos de trânsito foram calculados a partir dos seguintes raios
+    \begin{columns}
+        \begin{column}{0.62\linewidth}
+            \begin{figure}[h]
+                \includegraphics[height=4.5cm]{rays.png}
+                \caption{Geometria dos raios \mps{571}. Somente são mostrados um quarto dos raios.}
+                
+                \label{fig:rays}
+            \end{figure}
+        \end{column}
+        \pause
+        \begin{column}{0.38\linewidth}
+        \vspace{-1cm}
+            \begin{itemize}
+                \item A região tem \unit[2.4]{km} por \unit[3.2]{km}.
+                \pause
+                \item Depois de obtidos os tempos de trânsito, foi acrescido ruído
+                Gaussiano com $\mu = 0$ e $\sigma =$ \unit[0.001]{s} aos dados.
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Resolução}
+\begin{frame}
+    \frametitle{Inversão}
+    \begin{equation}\label{eq:inversao}
+        \hat{\mathbf{m}} = \ut{G}^{-g}\mathbf{d}
+    \end{equation}
+\end{frame}
+\subsection{Mínimos Quadrados Amortecidos}
+\begin{frame}
+    \frametitle{Placeholder}
+\end{frame}
+
+\subsection{Mínimos Quadrados Ponderados}
+\begin{frame}
+    \frametitle{Placeholder}
+\end{frame}
+
+\subsection{Supressão Convolucional}
+\begin{frame}
+    \frametitle{Placeholder}
+\end{frame}
+
+\section{Resultados}
+\subsection{Mínimos Quadrados Amortecidos}
+\begin{frame}
+    \frametitle{Placeholder}
+\end{frame}
+
+\subsection{Supressão Convolutional}
+\begin{frame}
+    \frametitle{Placeholder}
+\end{frame}
+
+\section{Referências}
+\nocite{*}
+\bibliography{apresentacao}{}
+\bibliographystyle{plain}
+\end{document}
+
