@@ -28,16 +28,14 @@ So far, the following plugins are registered as submodules:
 
 ### Without Git
 These next commands will get you my vim files, but it won't add all plugins.
+I'm assuming you don't yet have a .vim directory. If you do, remove it.
 
-    mkdir ~/.vim
-    cd ~/.vim
     wget --no-check-certificate https://github.com/cako/myvim/tarball/master -O - | tar xz
-    mv cako-myvim-*/* .
-    rm -r cako-myvim-*/
+    mv cako-myvim-* ~/.vim
 
 After this is done, run `INSTALL.sh`: That will get you the rest of the plugins.
 
-    cd .vim
+    cd ~/.vim
     ./INSTALL.sh
 
 ### For both
