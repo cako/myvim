@@ -16,6 +16,7 @@ And install the submodules:
     git submodule update
 
 So far, the following plugins are registered as submodules:
+
 * pathogen
 * easymotion
 * nercommenter
