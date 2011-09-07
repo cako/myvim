@@ -1,6 +1,13 @@
 README
 ======
 
+Pre-Requisites
+--------------
+A lot of these plugins require one thing or another.
+So far, the only thing I haven't found packaged in Ubuntu repositories is
+Perl::Tags, needed for perl-support.
+It can be found [right here](http://search.cpan.org/~osfameron/Perl-Tags-0.23/lib/Perl/Tags.pm).
+
 Installation
 ------------
 
