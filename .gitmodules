@@ -13,9 +13,6 @@
 [submodule "autoload"]
 	path = autoload
 	url = https://github.com/paulnicholson/vim-pathogen.git
-[submodule "bundle/Pydiction"]
-	path = bundle/Pydiction
-	url = https://github.com/vim-scripts/Pydiction
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
