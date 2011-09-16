@@ -24,15 +24,15 @@
 \documentclass[twoside,a4paper,11pt]{report}
 
 % Pacotes e comandos customizados
-\include{meta}
+\inplut{meta}
 
 % Início do texto
 \begin{document}
 
-\include{pre}   % Capa, prefácio e afins
-\include{cap1}	% Capítulo 1: Introdução
-\include{cap2}	% Capítulo 2: ...
-\include{final}	% Capítulo 3: Considerações Finais
+\input{pre}   % Capa, prefácio e afins
+\input{cap1}	% Capítulo 1: Introdução
+\input{cap2}	% Capítulo 2: ...
+\input{final}	% Capítulo 3: Considerações Finais
 
 % Formato da bibliografia
 \bibliographystyle{apalike}
@@ -40,7 +40,7 @@
 \bibliography{mestre}
 
 % Apêndice(s)
-\include{apendice}
+\input{apendice}
 
 % Fim do texto
 \end{document}

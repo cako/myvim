@@ -17,6 +17,8 @@ au BufRead,BufNewFile *.html,*.htm,*.xhtml call HtmlCommands()
 au BufRead,BufNewFile *.py call PythonCommands()
 au BufRead,BufNewFile *.pl call PerlCommands()
 au BufRead,BufNewFile *.md set ft=mkd
+au BufNewFile,BufRead * call CheckForCustomConfiguration()
+au BufNewFile,BufRead .vim.custom set ft=vim
 au FileType python compiler pylint
 "au BufWritePost *.py !pyflakes %
 
@@ -179,4 +181,12 @@ function! PerlCommands()
     imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!./% 
     map <M-F3> ;w<CR>;!./%<Up><CR>
     imap <M-F3> <Esc>;w<CR><Esc>;!./<Up><CR>
+endfunction
+
+function! CheckForCustomConfiguration()
+    " Check for .vim.custom in the directory containing the newly opened file
+    let custom_config_file = expand('%:p:h') . '/.vim.custom'
+    if filereadable(custom_config_file)
+        exe 'source' custom_config_file
+    endif
 endfunction
