@@ -88,7 +88,7 @@ Nome			& Nome
 
 \parbox{16em}{\rule{16em}{1px} \\
 Prof. Dr. \\
-Nome do Orientador}
+\nomeorientador}
 \end{center}
 
 \newpage

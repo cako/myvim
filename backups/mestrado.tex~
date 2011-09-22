@@ -29,6 +29,7 @@
 % Início do texto
 \begin{document}
 
+\shit
 \include{pre}   % Capa, prefácio e afins
 \include{cap1}	% Capítulo 1: Introdução
 \include{cap2}	% Capítulo 2: ...

@@ -161,7 +161,7 @@ function! PythonCommands()
     setlocal noignorecase
     setlocal list
     setlocal textwidth=80
-    let g:pydiction_location = '~/.vim/bundle/after/ftplugin/pydiction/complete-dict'
+    setlocal dictionary+=~/.vim/bundle/after/ftplugin/pydiction/complete-dict
 
     command! -nargs=0 Pydoc exe '!pydoc' @
     map  <localleader>pd yiw;Pydoc<CR>
@@ -174,6 +174,10 @@ function! PythonCommands()
     " Close omnicomplete window after choosing word
     autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+    function! InsertPython()
+        0r ~/Templates/Python\ Template.py
+        <C-j>
+    endfunction
 endfunction
 
 function! PerlCommands()
