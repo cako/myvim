@@ -12,11 +12,9 @@ call pathogen#helptags()
 
 filetype plugin on
 set nocompatible
-au BufRead,BufNewFile *.tex call TexCommands()
-au BufRead,BufNewFile *.html,*.htm,*.xhtml call HtmlCommands()
-au BufRead,BufNewFile *.py call PythonCommands()
-au BufRead,BufNewFile *.pl call PerlCommands()
 au BufRead,BufNewFile *.md set ft=mkd
+au BufRead,BufNewFile *.xhtml set ft=xhtml.html
+au BufRead,BufNewFile *.htm set ft=htm.html
 au BufNewFile,BufRead * call CheckForCustomConfiguration()
 au BufNewFile,BufRead .vim.custom set ft=vim
 au FileType python compiler pylint
@@ -27,16 +25,16 @@ au FileType python compiler pylint
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Choose best suggestion and replace word with it
-map <leader>z bb]sz=1<CR><CR>
+map <leader>z [sz=1<CR><CR><C-o>
 
-"System clipboard interation
+" System clipboard interation
 vmap <C-c> "+y
 imap <C-v> <C-R>+
 
-"Don't lose paste
+" Don't lose paste
 xnoremap p pgvy
 
-"Control backspace deletes word
+" Control backspace deletes word
 imap <C-Backspace> <Esc>bdwi
 
 map <F9> ;NERDTreeToggle<CR>
@@ -53,6 +51,9 @@ map <leader>vim ;tabnew ~/.vimrc<CR>
 
 noremap ; :
 noremap : ;
+
+" Save it goddamnit!
+cmap w!! %!sudo tee > /dev/null %
 
 if has("gui_running")
     colorscheme PapayaWhip
@@ -99,93 +100,6 @@ set wildmode=list:longest
 """"""""""""""""""""""""""""""""""""""""""""""""
 "               Functions
 """"""""""""""""""""""""""""""""""""""""""""""""
-
-function! TexCommands()
-    setlocal backup
-    setlocal backupdir=~/.vim/backups
-    setlocal spell
-    setlocal spell spelllang=pt_br
-    setlocal textwidth=80
-
-    imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv 
-    map <F2> ;w<CR><localleader>ll<localleader>lv
-
-    imap <F3> <Esc>;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
-    map <F3> ;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
-
-    imap <localleader>a <C-K>a?
-    imap <C-a> <C-K>a^
-    imap <C-e> <C-K>e'
-
-    "For vim-latex
-    set grepprg=grep\ -nH\ $*
-    filetype indent on
-    setlocal iskeyword+=:
-
-    setlocal dictionary=~/.vim/bundle/vim-latex/ftplugin/latex-suite/dictionaries/dictionary
-    setlocal complete+=k
-
-    function! InsertBeamer()
-        0r ~/Templates/Beamer\ Presentation.tex
-        <C-j>
-    endfunction
-
-    function! InsertArticle()
-        0r ~/Templates/LaTeX\ Article.tex
-        <C-j>
-    endfunction
-
-    function! SetEnglishLanguage()
-        setlocal spell spelllang=en_us   
-    endfunction
-
-    function! SetPortugueseLanguage()
-        setlocal spell spelllang=pt_br   
-    endfunction
-
-    "LaTeX-Suite mappings
-    call IMAP('EFR', "\\begin{frame}\n\\frametitle{<++>}\n\\end{frame}", 'tex')
-    imap EFR EFR<Esc>V>%i
-
-    imap EIT EIT<Esc>V>A
-endfunction
-
-function! HtmlCommands()
-    map <F2> ;w<CR><Esc>;!firefox % &<CR>
-    imap <F2> <Esc>;w<CR><Esc>;!firefox % &<CR>
-    map <F3> ;w<CR><Esc>;W3cValidate<CR>
-    imap <F3> <Esc>;w<CR><Esc>;W3cValidate<CR>
-endfunction
-
-function! PythonCommands()
-    setlocal noignorecase
-    setlocal list
-    setlocal textwidth=80
-    setlocal dictionary+=~/.vim/bundle/after/ftplugin/pydiction/complete-dict
-
-    command! -nargs=0 Pydoc exe '!pydoc' @
-    map  <localleader>pd yiw;Pydoc<CR>
-    imap <localleader>pd <Esc>yiw;Pydoc<CR>
-    map <F3> ;w<CR>;!chmod a+x<CR>;!python %
-    imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!python %
-    map <M-F3> ;w<CR>;!python<Up><CR>
-    imap <M-F3> <Esc>;w<CR><Esc>;!python<Up><CR>
-    map <localleader>li ;set invlist<CR>
-    " Close omnicomplete window after choosing word
-    autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-    function! InsertPython()
-        0r ~/Templates/Python\ Template.py
-        <C-j>
-    endfunction
-endfunction
-
-function! PerlCommands()
-    map <F3> ;w<CR>;!chmod a+x<CR>;!./% 
-    imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!./% 
-    map <M-F3> ;w<CR>;!./%<Up><CR>
-    imap <M-F3> <Esc>;w<CR><Esc>;!./<Up><CR>
-endfunction
 
 function! CheckForCustomConfiguration()
     " Check for .vim.custom in the directory containing the newly opened file

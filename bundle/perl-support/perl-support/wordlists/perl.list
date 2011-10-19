@@ -130,6 +130,7 @@ reverse
 rewinddir
 rindex
 rmdir
+say
 scalar
 seek
 seekdir
