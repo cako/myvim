@@ -46,9 +46,13 @@ After this is done, run `INSTALL.sh`: That will get you the rest of the plugins.
     ./INSTALL.sh
 
 ### For both
-Create symlinks:
+Create symlinks for the config files,
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+
+and also for the perl-support to play nice with Pathogen:
+    
+    ln -s ~/.vim/bundle/perl-support/perl-support/ ~/.vim/perl-support
 
 ### And you are done!
