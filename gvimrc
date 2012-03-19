@@ -1,2 +1,2 @@
 set guioptions-=T
-set guifont=Inconsolata\ Medium\ 13
+set guifont=Inconsolata\ Medium\ 12

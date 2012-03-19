@@ -12,7 +12,7 @@
 \par
 \vfill
 \textbf{{\large Campinas}\\
-{\large 2009}}
+{\large \ano}}
 \end{center}
 \end{titlepage}
 
@@ -33,13 +33,13 @@
 \end{center}
 \par
 \vspace{90pt}
-\hspace*{175pt}\parbox{7.5cm}{{\large Dissertação apresentada ao Instituto de
-Matemática, Estatística e Computação Científica, para a obtenção de Título de
-Mestre em Matemática Aplicada, na Área de XXXXXXXX.}}
+\hspace*{162pt}\parbox{9cm}{{\large Dissertação de Mestrado apresentada ao Instituto de
+Matemática, Estatística e Computação Científica, como parte dos requisitos para a obtenção do título de
+Mestre em Matemática Aplicada. Área de concentração: Matemática Aplicada.}}
 
 \par
 \vspace{1em}
-\hspace*{175pt}\parbox{7.6cm}{{\large Orientador: \nomeorientador}}
+\hspace*{162pt}\parbox{7.6cm}{{\large Orientador: \nomeorientador}}
 
 \par
 \vfill
@@ -51,7 +51,7 @@ Mestre em Matemática Aplicada, na Área de XXXXXXXX.}}
 \newpage
 
 % Ficha Catalográfica
-\hspace{8em}\fbox{\begin{minipage}{9.20cm}
+\hspace{7em}\fbox{\begin{minipage}{10cm}
 da Costa Filho, Carlos A.
 
 \hspace{2em}\titulo
@@ -67,7 +67,7 @@ Computação Científica. Departamento de Matemática Aplicada.
 \item Palavra-chave
 \end{enumerate}
 I. Universidade Estadual de Campinas. Instituto de Matemática, Estatística e
-Computação Científica. Departamento de Matemática Aplicada.
+Computação Científica. \mbox{Departamento de Matemática Aplicada}.
 
 \end{minipage}}
 \par
@@ -76,7 +76,7 @@ Computação Científica. Departamento de Matemática Aplicada.
 {\LARGE\textbf{Comissão Julgadora:}}
 
 \par
-\vspace{10em}
+\vspace{7em}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l}
 \rule{16em}{1px} 	& \rule{16em}{1px} \\
 Prof. Dr. 		& Prof. Dr. \\
@@ -104,35 +104,35 @@ Prof. Dr. \\
 
 % Epígrafe
 \vspace*{0.4\textheight}
-\noindent{\LARGE\textbf{Exemplo de epígrafe}}
+\noindent{\LARGE\textbf{Epígrafe}}
 % Tudo que você escreve no verbatim é renderizado literalmente (comandos não são interpretados e os espaços são respeitados)
-\begin{verbatim}
-O que é bonito?
-É o que persegue o infinito;
-Mas eu não sou
-Eu não sou, não…
-Eu gosto é do inacabado,
-O imperfeito, o estragado, o que dançou
-O que dançou…
-Eu quero mais erosão
-Menos granito.
-Namorar o zero e o não,
-Escrever tudo o que desprezo
-E desprezar tudo o que acredito.
-Eu não quero a gravação, não,
-Eu quero o grito.
-Que a gente vai, a gente vai
-E fica a obra,
-Mas eu persigo o que falta
-Não o que sobra.
-Eu quero tudo que dá e passa.
-Quero tudo que se despe,
-Se despede, e despedaça.
-O que é bonito…
-\end{verbatim}
-\begin{flushright}
-Lenine e Bráulio Tavares
-\end{flushright}
+%\begin{verbatim}
+%O que é bonito?
+%É o que persegue o infinito;
+%Mas eu não sou
+%Eu não sou, não…
+%Eu gosto é do inacabado,
+%O imperfeito, o estragado, o que dançou
+%O que dançou…
+%Eu quero mais erosão
+%Menos granito.
+%Namorar o zero e o não,
+%Escrever tudo o que desprezo
+%E desprezar tudo o que acredito.
+%Eu não quero a gravação, não,
+%Eu quero o grito.
+%Que a gente vai, a gente vai
+%E fica a obra,
+%Mas eu persigo o que falta
+%Não o que sobra.
+%Eu quero tudo que dá e passa.
+%Quero tudo que se despe,
+%Se despede, e despedaça.
+%O que é bonito…
+%\end{verbatim}
+%\begin{flushright}
+%Lenine e Bráulio Tavares
+%\end{flushright}
 
 \newpage
 
@@ -141,9 +141,9 @@ Lenine e Bráulio Tavares
 % Espaçamento duplo
 \doublespacing
 
-\noindent{\LARGE\textbf{Agradecimentos}}
+\noindent{\LARGE\textbf{Acknowledgments}}
 
-Agradeço ao meu orientador, ao meu co-orientador, aos meus colaboradores, aos técnicos, à seção administrativa, à fundação que liberou verba para minhas pesquisas, aos meus amigos, à minha família e ao meu grande amor.
+%Agradeço ao meu orientador, ao meu co-orientador, aos meus colaboradores, aos técnicos, à seção administrativa, à fundação que liberou verba para minhas pesquisas, aos meus amigos, à minha família e ao meu grande amor.
 
 \newpage
 
@@ -186,7 +186,7 @@ A good abstract explains why this is an interesting study, tells how it was done
 \noindent\textbf{Keywords:} word1, word2, word3
 
 % Voltando ao português...
-\selectlanguage{brazilian}
+%\selectlanguage{brazilian}
 
 \newpage
 

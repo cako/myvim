@@ -2,7 +2,8 @@
 
 %% Codificação e formatação básica do LaTeX
 % Suporte para português (hifenação e caracteres especiais)
-\usepackage[english,brazilian]{babel}
+%\usepackage[english,brazilian]{babel}
+\usepackage[english]{babel}
 
 % Codificação do arquivo
 \usepackage[utf8]{inputenc}
@@ -12,6 +13,8 @@
 
 % Codificação da fonte
 \usepackage[T1]{fontenc}
+% Palatino para matemática
+\usepackage{mathpazo}
 
 % Essencial para colocar funções e outros símbolos matemáticos
 \usepackage{amsmath,amssymb,amsfonts,textcomp}
@@ -78,7 +81,8 @@
 
 %% Lista de Abreviações
 % Cria lista de abreviações
-\usepackage[notintoc,portuguese]{nomencl}
+%\usepackage[notintoc,portuguese]{nomencl}
+\usepackage[notintoc]{nomencl}
 \makenomenclature
 
 %% Notas de rodapé
@@ -88,17 +92,24 @@
 % Notas criadas nas tabelas ficam no fim das tabelas
 \makesavenoteenv{tabular}
 
+%% Dados do projeto
+\newcommand{\titulo}{Independent component analysis and its applications to seismic multiple removal}
+\newcommand{\nomedoaluno}{Carlos Alberto da Costa Filho}
+\newcommand{\nomeorientador}{Martin Tygel}
+\newcommand{\ano}{2012}
+
+
 %% Links dinâmicos
 % Suporte para hipertexto, links para referências e figuras
 \usepackage{hyperref}
 % Configurações dos links e metatags do PDF a ser gerado
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, pagecolor=blue, urlcolor=green,
-            pdfauthor={Carlos Alberto da Costa Filho},
-            pdftitle={Título do Projeto},
-            pdfsubject={Assunto do Projeto},
+            pdfauthor={\nomedoaluno},
+            pdftitle={\titulo},
+            pdfsubject={Applied mathematics},
             pdfkeywords={palavra-chave, palavra-chave, palavra-chave},
-            pdfproducer={Latex},
-            pdfcreator={pdflatex}}
+            pdfproducer={LaTeX},
+            pdfcreator={pdfLaTeX}}
 
 % Conta o número de páginas
 \usepackage{lastpage}
@@ -151,16 +162,10 @@
 
 %% Comandos customizados
 
-% Espécie e abreviação
-\newcommand{\subde}{\emph{Clypeaster subdepressus}}
-\newcommand{\subsus}{\emph{C.~subdepressus}}
-
-% Título do projeto
-\newcommand{\titulo}{Título original do projeto}
-\newcommand{\nomedoaluno}{Carlos Alberto da Costa Filho}
-\newcommand{\nomeorientador}{Martin Tygel}
-
 %% Pacotes não implementados
 % Para não sobrar espaços em branco estranhos
 %\widowpenalty=1000
 %\clubpenalty=1000
+
+%% SageTeX
+%\usepackage{sagetex}

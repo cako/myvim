@@ -13,11 +13,13 @@ call pathogen#helptags()
 filetype plugin on
 set nocompatible
 au BufRead,BufNewFile *.md set ft=mkd
+au BufRead,BufNewFile *.cc set ft=cc.c
 au BufRead,BufNewFile *.xhtml set ft=xhtml.html
 au BufRead,BufNewFile *.htm set ft=htm.html
+au BufRead,BufNewFile *.qrc set ft=xml
 au BufNewFile,BufRead * call CheckForCustomConfiguration()
-au BufNewFile,BufRead .vim.custom set ft=vim
-au FileType python compiler pylint
+au BufNewFile,BufRead .vim.custom set syntax=vim
+"au FileType python compiler pylint
 "au BufWritePost *.py !pyflakes %
 
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -71,6 +73,8 @@ syntax on
 set number
 
 set spellsuggest=best,3
+"setlocal spell spelllang=en_us
+"setlocal spell spelllang=pt_br
 
 set incsearch
 set ignorecase
