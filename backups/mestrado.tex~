@@ -21,7 +21,7 @@
 % Para mais informações visite http://code.google.com/p/mestre-em-latex/
 
 % Classe do documento
-\documentclass[twoside,a4paper,11pt]{report}
+\documentclass[twoside,a4paper,12pt]{report}
 
 % Pacotes e comandos customizados
 \include{meta}
@@ -36,6 +36,7 @@
 
 % Formato da bibliografia
 \bibliographystyle{apalike}
+%\bibliographystyle{plainnat}
 % Arquivo .bib
 \bibliography{mestre}
 

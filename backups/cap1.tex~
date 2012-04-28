@@ -8,77 +8,57 @@
 \chapter{Introduction}\label{intro}
 \section{Description of the problem}\label{intro:problem}
 
-A typical problem in exploration geophysics is the imaging of the distribution of materials in the interior of
-the Earth.
+A typical problem in exploration geophysics is the imaging of the distribution of materials in the interior of the Earth.
 These materials are arranged in a stratified fashion, that is, one layer sits atop the other.
-These layers possess their own set of physical properties, such as density, porosity, permeability, etc., that
-may vary or not within the layer.
+These layers possess their own set of physical properties, such as density, porosity, permeability, etc., that may vary or not within the layer.
 One particular property these layers have is the velocity of the propagation of seismic waves within them.
-This is interesting to the problem because, if seismic waves pass from one medium to another medium with
-differing velocity, part of the wave will be reflected, while another will be refracted.
-Furthermore, the reflected wave will carry information of the media it has traveled through, and of the medium
-it reflected from.
+This is interesting to the problem because, if seismic waves pass from one medium to another medium with differing velocity, part of the wave will be reflected, while another will be refracted.
+Furthermore, the reflected wave will carry information of the media it has traveled through, and of the medium it reflected from.
 This gives rise to the method of reflection seismology.
 
-Amongst the many methods in exploration geophysics, reflection seismology is by far the most common one used
-when attempting to build a detailed image of the Earth's interior.
-It uses the reflection of seismic waves to estimate the positions of layers inside the earth and some of
-their physical properties.
-A typical experiment consists in creating seismic waves and measuring their reflections in what is called a
-trace.
+Amongst the many methods in exploration geophysics, reflection seismology is by far the most common one used when attempting to build a detailed image of the Earth's interior.
+It uses the reflection of seismic waves to estimate the positions of layers inside the earth and some of their physical properties.
+A typical experiment consists in creating seismic waves and measuring their reflections in what is called a trace.
 These seismic waves can reflect and refract multiples times.
-The events that come from a wave that reflected once is called a primary~\footnote{A primary event is not to
-be confused with a P-wave. The adjective \emph{primary} in the former refers to the type of reflection event,
-while in the latter, refers to the type of wave (compressional and longitudinal)}, while an event that derives
-from a wave that was reflected more than once is called a multiple.
+The events that come from a wave that reflected once is called a primary\footnote{A primary event is not to be confused with a P-wave. The adjective \emph{primary} in the former refers to the type of reflection event, while in the latter, refers to the type of wave (compressional and longitudinal)}, while an event that derives from a wave that was reflected more than once is called a multiple.
 
 \section{Multiples and their removal}\label{intro:multiples}
 
-The most common imaging algorithms make the assumption that the received waves only reflected once, that is,
-it assumes all events are primary.
-This assumption comes from the fact that waves that multiples usually travel a longer path, and thus usually
-arrive after the primaries.
-However, for all but the most simple geologies, this is untrue, and multiples arrive intermixed with
-primaries.
+The most common imaging algorithms make the assumption that the received waves only reflected once, that is, it assumes all events are primary. %PERGUNTAR QUAIS NO LAB, REFS
+This assumption comes from the fact that multiples usually travel a longer path, and consequently, should arrive after the primaries.
+However, for all but the most simple geologies, this is untrue, and multiples arrive intermixed with primaries.
 Consequently, in order to use the gathered data in these algorithms, one must first remove the multiples.
 
-\cite{Verschuur06} and \cite{Yilmaz01} separate multiple removal methods in two categories: a) methods that
-rely on the different spacial behavior of multiples, and b) methods that use the fact that multiples are
-predictable.
-Methods of the first type are based on the assumption that multiples have differing (moveout) velocities, and
-exhibit different local dip when compared to primaries. % PESQUISAR DIP
-These methods include: F-K, Slant-Stack and Radon filtering, and high-resolution Radon filtering.
-Methods of the second type are based on the fact that, if the subsurfaces\footnote{The term \emph{subsurface}
-refers to the idealized surface formed by the interface between two strata.} and the source wavelet are known,
-then it is possible to predict the multiples. These methods are usually divided in two parts: prediction and
-subtraction. The prediction step concerns itself with estimating the source wavelet and effectively predicting
-the multiples. Estimation of the wavelet can be done with methods like predictive deconvolution and blind
-source separation (BSS) techniques, such as independent component analysis (ICA). For the prediction of the
-multiples, there exists methods such as surface-related multiple elimination (SRME), free-surface multiple
-elimination (FSME) and internal removal multiple by inverse scattering.
+\cite{Verschuur06} and \cite{Yilmaz01} separate multiple removal methods in two categories: a) methods that rely on the different spacial behavior of multiples, and b) methods that use the fact that multiples are predictable.
+Methods of the first type are based on the assumption that multiples have differing (moveout) velocities, and exhibit different local dip when compared to primaries. % PESQUISAR DIP
+These methods include: $f$-$k$, slant-stack and Radon filtering, and high-resolution Radon filtering.
+Methods of the second type are based on the fact that, if the interfaces and the source wavelet are known, then it is possible to predict the multiples.
+These methods are usually divided in two parts: prediction and subtraction.
+The prediction step concerns itself with estimating the source wavelet and effectively predicting the multiples.
+Estimation of the wavelet can be done with methods like predictive deconvolution and blind deconvolution.
 
-The purpose of this work is to exploit ICA distinct techniques in both the prediction of the wavelet, as well
-as in the removal of the multiples.
-While the use of ICA for BSS has been used since the early 1990s, its application to seismic signal processing
-is more recent, dating from the beginning of the 2000s.
-Newer still is the application of ICA in multiple removal, having being recently pioneered in \cite{Lu06}
-and in \cite{Kaplan_Innanen08}.
+For the prediction of the multiples, there exists methods such as surface-related multiple elimination (SRME), free-surface multiple elimination (FSME) and internal removal multiple by inverse scattering.
+
+In the present work, the methods of SRME and FSME will be studied, in connection to independent component analysis (ICA). 
+\nomenclature{ICA}{Independent Component Analysis}%
+\nomenclature{SRME}{Surface-Related Multiple Elimination}%
+\nomenclature{FSME}{Free-Surface Multiple Elimination}%
 
 \section{Independent component analysis}\label{intro:ica}
 
-As was discussed in the previous section, ICA can be quite relevant to the problem of multiple removal.
-It is a technique closely related to BSS. % VERIFICAR, CITAR
-The problem of blind source separation is the following: given a linear combination of a number of source
-signals, separate these ``mixtures'' into their individual, original signals.
-The fact that these mixtures are unknown give meaning to the term \emph{blind}.
-As posed, the problem is completely undetermined, and thus impossible to solve uniquely.
-The method of ICA supposes that the sources are statistically independent of each other, which is quite
-appropriate for our application.
-With this assumption, the problem can be solved uniquely\footnote{Except for scaling constants and order.}
-In this work, the use of ICA is twofold.
-First, since a trace can be modeled as the convolution of the Earth's reflectivity and the wavelet
-\citep{Robinson57}, this deconvolution can be formulated as a BSS problem \citep{Hyvarinen01}, and is thus
-tractable by ICA\@.
-As such, ICA will be employed in recovering the wavelet from the traces.
-Second, the problem of adaptive multiple removal can also be formulated as a BSS problem \citep{Lu06} and
-consequently, can be solved using ICA.
+ICA is a technique which, among other applications, can solve the problem of blind deconvolution.
+ICA can be seen as a special case of blind source separation (BSS).
+The problem of blind source separation is the following: given a combination of a number of source signals, separate these ``mixtures'' into their individual, original signals.
+The fact that how these combinations are performed are unknown, give meaning to the term \emph{blind}.
+It is quite clear that in such formulation, the problem is tremendously ill-posed.
+Depending on the mixtures, it can impossible solve uniquely, or even impossible to solve at all.
+Therefore, in order to recover the sources, additional hypotheses are necessary.
+Different hypotheses lead to different solutions.
+The method of ICA supposes that the sources are statistically mutually independent.
+Furthermore, in linear ICA, which will be used exclusively, the mixtures are linear combinations of the sources.
+With these \emph{a priori} informations, the problem can be solved uniquely\footnote{Under a few more assumptions, and except for scaling constants and permutations; this will be treated more thoroughly in section~\ref{cap2:identsepuniq}.}.  
+\nomenclature{BSS}{Blind Source Separation}%
+
+The purpose of this work is to exploit distinct techniques involving ICA in both the prediction of the wavelet, the estimation of the reflectivity, as well as in the removal of the multiples.
+While the use of ICA for blind deconvolution has been used since the 1980s, its application to seismic signal processing is more recent, dating from the beginning of the 2000s.
+Newer still is the application of ICA in multiple removal, having being recently pioneered in \cite{Lu06}, \cite{Kaplan_Innanen08} and~\cite{Lu_Liu09}.

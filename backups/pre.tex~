@@ -4,16 +4,43 @@
 % e descomente a linha abaixo.
 % \ThisCenterWallPaper{0.8}{nomedafigura}
 
+%% Original sem firulas
+%\begin{center}
+%{\LARGE \nomedoaluno}
+%\par
+%\vspace{200pt}
+%{\Huge \titulo}
+%\par
+%\vfill
+%\textbf{{\large Campinas}\\
+%{\large \ano}}
+%\end{center}
+
+%% Com firulas
 \begin{center}
+% Upper part of the page
 {\LARGE \nomedoaluno}
-\par
-\vspace{200pt}
-{\Huge \titulo}
-\par
+%\par
+\vspace{150pt}
+% Title
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\HRule \\[0.4cm]
+{\huge \bfseries \titulo}\\[0.4cm]
+\HRule \\[2cm]
+%\textsc{\LARGE Universidade Estadual de Campinas}\\[1cm]
+%\textsc{Instituto de Matemática, Estatística e Computação Científica}\\[2cm]
+\includegraphics[width=0.20\textwidth]{./logos/logo.pdf}\\[1cm]    
+
+%\textsc{Candidato:}\\
+%Carlos Alberto da \textsc{Costa} Filho\\[0.5cm]
+%\textsc{Supervisor:}\\
+%Martin \textsc{Tygel}\\
 \vfill
-\textbf{{\large Campinas}\\
-{\large \ano}}
+% Bottom of the page
+{\large Campinas, \ano}
 \end{center}
+
+
 \end{titlepage}
 
 % A partir daqui páginas sem cabeçalho
@@ -97,38 +124,16 @@ Prof. Dr. \\
 % Posição do texto na página
 \vspace*{0.75\textheight}
 \begin{flushright}
-  \emph{Dedicatória...}
+  %\emph{Dedicatória...}
 \end{flushright}
 
 \newpage
 
 % Epígrafe
 \vspace*{0.4\textheight}
-\noindent{\LARGE\textbf{Epígrafe}}
+\noindent{\LARGE\textbf{Epigraph}}
 % Tudo que você escreve no verbatim é renderizado literalmente (comandos não são interpretados e os espaços são respeitados)
 %\begin{verbatim}
-%O que é bonito?
-%É o que persegue o infinito;
-%Mas eu não sou
-%Eu não sou, não…
-%Eu gosto é do inacabado,
-%O imperfeito, o estragado, o que dançou
-%O que dançou…
-%Eu quero mais erosão
-%Menos granito.
-%Namorar o zero e o não,
-%Escrever tudo o que desprezo
-%E desprezar tudo o que acredito.
-%Eu não quero a gravação, não,
-%Eu quero o grito.
-%Que a gente vai, a gente vai
-%E fica a obra,
-%Mas eu persigo o que falta
-%Não o que sobra.
-%Eu quero tudo que dá e passa.
-%Quero tudo que se despe,
-%Se despede, e despedaça.
-%O que é bonito…
 %\end{verbatim}
 %\begin{flushright}
 %Lenine e Bráulio Tavares
@@ -157,10 +162,10 @@ Prof. Dr. \\
 % Além disso, ajuda se você estiver comparando versões diferentes do mesmo texto.
 % Para separar parágrafos utilize uma linha em branco.
 \noindent
-Esta, quem sabe, é a parte mais importante do seu trabalho.
-É o que a maioria das pessoas vai ler (além do título).
-Seja objetivo sem perder conteúdo.
-Um bom resumo explica porquê este trabalho é interessante, relata como foi feito, o que foi encontrado, contextualiza os resultados e delineia conclusões.
+%Esta, quem sabe, é a parte mais importante do seu trabalho.
+%É o que a maioria das pessoas vai ler (além do título).
+%Seja objetivo sem perder conteúdo.
+%Um bom resumo explica porquê este trabalho é interessante, relata como foi feito, o que foi encontrado, contextualiza os resultados e delineia conclusões.
 \par
 \vspace{1em}
 \noindent\textbf{Palavras-chave:} palavra1, palavra2, palavra3
@@ -177,10 +182,10 @@ Um bom resumo explica porquê este trabalho é interessante, relata como foi fei
 % Selecionar a linguagem acerta os padrões de hifenação diferentes entre inglês e português.
 \selectlanguage{english}
 \noindent
-This is the most important part of your work.
-This is what most people will read.
-Be concise without omitting content.
-A good abstract explains why this is an interesting study, tells how it was done, what was found, contextualizes the results and set conclusions.
+%This is the most important part of your work.
+%This is what most people will read.
+%Be concise without omitting content.
+%A good abstract explains why this is an interesting study, tells how it was done, what was found, contextualizes the results and set conclusions.
 \par
 \vspace{1em}
 \noindent\textbf{Keywords:} word1, word2, word3
