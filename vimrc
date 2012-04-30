@@ -57,12 +57,6 @@ noremap : ;
 " Save it goddamnit!
 cmap w!! %!sudo tee > /dev/null %
 
-if has("gui_running")
-    colorscheme PapayaWhip
-else
-    colorscheme desert
-endif
-
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -74,7 +68,7 @@ set number
 
 set spellsuggest=best,3
 "setlocal spell spelllang=en_us
-"setlocal spell spelllang=pt_br
+"setlocal spell spelllang=pt
 
 set incsearch
 set ignorecase

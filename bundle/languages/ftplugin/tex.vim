@@ -1,7 +1,6 @@
 setlocal backup
 setlocal backupdir=~/.vim/backups
 setlocal spell
-setlocal spell spelllang=pt_br
 setlocal textwidth=80
 setlocal iskeyword+=\
 
@@ -38,8 +37,10 @@ function! SetEnglishLanguage()
 endfunction
 
 function! SetPortugueseLanguage()
-    setlocal spell spelllang=pt_br   
+    setlocal spell spelllang=pt   
 endfunction
+
+call SetPortugueseLanguage()
 
 "LaTeX-Suite mappings
 call IMAP('EFM', "\\begin{frame}\n\\frametitle{<++>}\n\\end{frame}", 'tex')
