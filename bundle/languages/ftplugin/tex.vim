@@ -1,6 +1,11 @@
 setlocal backup
 setlocal backupdir=~/.vim/backups
+
 setlocal spell
+% Underline wrong words
+highlight clear SpellBad
+highlight SpellBad term=reverse cterm=underline
+
 setlocal textwidth=80
 setlocal iskeyword+=\
 
