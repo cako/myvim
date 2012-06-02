@@ -28,7 +28,7 @@ au BufNewFile,BufRead SConstruct set syntax=python
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Choose best suggestion and replace word with it
-map <leader>z ]sz=1<CR><CR><C-o>
+map <leader>z [sz=1<CR><CR><C-o>
 
 " System clipboard interation
 vmap <C-c> "+y
