@@ -1,6 +1,11 @@
 setlocal backup
 setlocal backupdir=~/.vim/backups
 
+" Vim Conceal
+setlocal cole=1
+hi Conceal guibg=PapayaWhip guifg=DarkRed
+syn match texGreek '\\sqrt\>' contained conceal cchar=√
+
 setlocal spell
 " Underline wrong words
 if has("gui_running")
@@ -52,6 +57,8 @@ call SetPortugueseLanguage()
 
 "LaTeX-Suite mappings
 call IMAP('EFM', "\\begin{frame}\n\\frametitle{<++>}\n\\end{frame}", 'tex')
-imap EFM EFM<Esc>V>%i
+call IMAP('`o', "\\omega", 'tex')
+call IMAP('ãst', "\\ast", 'tex')
 
-imap EIT EIT<Esc>V>A
+imap EFM EFM<Esc>V>%i
+"imap EIT EIT<Esc>V>A

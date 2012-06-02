@@ -19,6 +19,7 @@ au BufRead,BufNewFile *.htm set ft=htm.html
 au BufRead,BufNewFile *.qrc set ft=xml
 au BufNewFile,BufRead * call CheckForCustomConfiguration()
 au BufNewFile,BufRead .vim.custom set syntax=vim
+au BufNewFile,BufRead SConstruct set syntax=python
 "au FileType python compiler pylint
 "au BufWritePost *.py !pyflakes %
 
@@ -27,7 +28,7 @@ au BufNewFile,BufRead .vim.custom set syntax=vim
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Choose best suggestion and replace word with it
-map <leader>z [sz=1<CR><CR><C-o>
+map <leader>z ]sz=1<CR><CR><C-o>
 
 " System clipboard interation
 vmap <C-c> "+y
