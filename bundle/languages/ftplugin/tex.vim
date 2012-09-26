@@ -2,7 +2,7 @@ setlocal backup
 setlocal backupdir=~/.vim/backups
 
 " Vim Conceal
-setlocal cole=1
+"setlocal cole=1
 hi Conceal guibg=PapayaWhip guifg=DarkRed
 syn match texGreek '\\sqrt\>' contained conceal cchar=√
 

@@ -67,6 +67,8 @@ cmap w!! %!sudo tee > /dev/null %
 syntax on
 set number
 
+set history=1000
+
 set spellsuggest=best,3
 "setlocal spell spelllang=en_us
 "setlocal spell spelllang=pt
@@ -95,6 +97,14 @@ autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | lcd %:p:h | endif
 "Enable autocompletion like bash
 set wildmenu
 set wildmode=list:longest
+
+if has('gui_running')
+    set background=light
+    colorscheme PapayaWhip
+else
+    set background=dark
+    colorscheme wombat
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 "               Functions
