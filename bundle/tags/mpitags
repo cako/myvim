@@ -1,0 +1,1147 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HAVE_MPI_OFFSET	/usr/lib/openmpi/include/mpi.h	1894;"	d
+IMPI_CLIENT_COLOR	/usr/lib/openmpi/include/mpi.h	/^    IMPI_CLIENT_COLOR,$/;"	e	enum:__anon1
+IMPI_CLIENT_SIZE	/usr/lib/openmpi/include/mpi.h	/^    IMPI_CLIENT_SIZE,$/;"	e	enum:__anon1
+IMPI_CLIENT_SIZE	/usr/lib/openmpi/include/mpif-common.h	/^      integer IMPI_CLIENT_SIZE, IMPI_CLIENT_COLOR$/;"	v
+IMPI_HOST_COLOR	/usr/lib/openmpi/include/mpi.h	/^    IMPI_HOST_COLOR$/;"	e	enum:__anon1
+IMPI_HOST_SIZE	/usr/lib/openmpi/include/mpi.h	/^    IMPI_HOST_SIZE,$/;"	e	enum:__anon1
+IMPI_HOST_SIZE	/usr/lib/openmpi/include/mpif-common.h	/^      integer IMPI_HOST_SIZE, IMPI_HOST_COLOR$/;"	v
+MPIO_Request	/usr/lib/openmpi/include/mpi.h	191;"	d
+MPIO_Test	/usr/lib/openmpi/include/mpi.h	192;"	d
+MPIO_Wait	/usr/lib/openmpi/include/mpi.h	193;"	d
+MPI_2COMPLEX	/usr/lib/openmpi/include/mpi.h	785;"	d
+MPI_2COMPLEX	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_2COMPLEX, MPI_2DOUBLE_COMPLEX$/;"	v
+MPI_2DOUBLE_COMPLEX	/usr/lib/openmpi/include/mpi.h	786;"	d
+MPI_2DOUBLE_PRECISION	/usr/lib/openmpi/include/mpi.h	842;"	d
+MPI_2DOUBLE_PRECISION	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_2REAL, MPI_2DOUBLE_PRECISION, MPI_2INTEGER$/;"	v
+MPI_2INT	/usr/lib/openmpi/include/mpi.h	776;"	d
+MPI_2INTEGER	/usr/lib/openmpi/include/mpi.h	843;"	d
+MPI_2REAL	/usr/lib/openmpi/include/mpi.h	841;"	d
+MPI_2REAL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_2REAL, MPI_2DOUBLE_PRECISION, MPI_2INTEGER$/;"	v
+MPI_ADDRESS_KIND	/usr/lib/openmpi/include/mpif-config.h	/^      integer MPI_OFFSET_KIND, MPI_ADDRESS_KIND, MPI_INTEGER_KIND$/;"	v
+MPI_ANY_SOURCE	/usr/lib/openmpi/include/mpi.h	287;"	d
+MPI_ANY_SOURCE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_ANY_SOURCE, MPI_ANY_TAG$/;"	v
+MPI_ANY_TAG	/usr/lib/openmpi/include/mpi.h	290;"	d
+MPI_APPNUM	/usr/lib/openmpi/include/mpi.h	/^    MPI_APPNUM,$/;"	e	enum:__anon1
+MPI_APPNUM	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_APPNUM, MPI_LASTUSEDCODE, MPI_UNIVERSE_SIZE$/;"	v
+MPI_ARGVS_NULL	/usr/lib/openmpi/include/mpi.h	308;"	d
+MPI_ARGV_NULL	/usr/lib/openmpi/include/mpi.h	307;"	d
+MPI_Abort	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Abort(MPI_Comm comm, int errorcode);$/;"	p
+MPI_Accumulate	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Accumulate(void *origin_addr, int origin_count, MPI_Datatype origin_datatype,$/;"	p
+MPI_Add_error_class	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Add_error_class(int *errorclass);$/;"	p
+MPI_Add_error_code	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Add_error_code(int errorclass, int *errorcode);$/;"	p
+MPI_Add_error_string	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Add_error_string(int errorcode, char *string);$/;"	p
+MPI_Address	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Address(void *location, MPI_Aint *address);$/;"	p
+MPI_Aint	/usr/lib/openmpi/include/mpi.h	/^typedef OMPI_PTRDIFF_TYPE MPI_Aint;$/;"	t
+MPI_Allgather	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Allgather(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Allgatherv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Allgatherv(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Alloc_mem	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Alloc_mem(MPI_Aint size, MPI_Info info, $/;"	p
+MPI_Allreduce	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Allreduce(void *sendbuf, void *recvbuf, int count, $/;"	p
+MPI_Alltoall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Alltoall(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Alltoallv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Alltoallv(void *sendbuf, int *sendcounts, int *sdispls, $/;"	p
+MPI_Alltoallw	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Alltoallw(void *sendbuf, int *sendcounts, int *sdispls, MPI_Datatype *sendtypes, $/;"	p
+MPI_Attr_delete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Attr_delete(MPI_Comm comm, int keyval);$/;"	p
+MPI_Attr_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Attr_get(MPI_Comm comm, int keyval, void *attribute_val, int *flag);$/;"	p
+MPI_Attr_put	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Attr_put(MPI_Comm comm, int keyval, void *attribute_val);$/;"	p
+MPI_BAND	/usr/lib/openmpi/include/mpi.h	746;"	d
+MPI_BAND	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BAND, MPI_LOR, MPI_BOR, MPI_LXOR, MPI_BXOR$/;"	v
+MPI_BOR	/usr/lib/openmpi/include/mpi.h	748;"	d
+MPI_BOR	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BAND, MPI_LOR, MPI_BOR, MPI_LXOR, MPI_BXOR$/;"	v
+MPI_BOTTOM	/usr/lib/openmpi/include/mpi.h	302;"	d
+MPI_BSEND_OVERHEAD	/usr/lib/openmpi/include/mpi.h	304;"	d
+MPI_BXOR	/usr/lib/openmpi/include/mpi.h	750;"	d
+MPI_BYTE	/usr/lib/openmpi/include/mpi.h	757;"	d
+MPI_BYTE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BYTE, MPI_PACKED, MPI_UB, MPI_LB$/;"	v
+MPI_Barrier	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Barrier(MPI_Comm comm);$/;"	p
+MPI_Bcast	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Bcast(void *buffer, int count, MPI_Datatype datatype, $/;"	p
+MPI_Bsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Bsend(void *buf, int count, MPI_Datatype datatype, $/;"	p
+MPI_Bsend_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Bsend_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+MPI_Buffer_attach	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Buffer_attach(void *buffer, int size);$/;"	p
+MPI_Buffer_detach	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Buffer_detach(void *buffer, int *size);$/;"	p
+MPI_CART	/usr/lib/openmpi/include/mpi.h	295;"	d
+MPI_CART	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_CART, MPI_GRAPH, MPI_KEYVAL_INVALID$/;"	v
+MPI_CHAR	/usr/lib/openmpi/include/mpi.h	759;"	d
+MPI_CHARACTER	/usr/lib/openmpi/include/mpi.h	789;"	d
+MPI_CHARACTER	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_CHARACTER, MPI_LOGICAL$/;"	v
+MPI_COMBINER_CONTIGUOUS	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_CONTIGUOUS,$/;"	e	enum:__anon4
+MPI_COMBINER_DARRAY	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_DARRAY,$/;"	e	enum:__anon4
+MPI_COMBINER_DUP	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_DUP,$/;"	e	enum:__anon4
+MPI_COMBINER_F90_COMPLEX	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_F90_COMPLEX,$/;"	e	enum:__anon4
+MPI_COMBINER_F90_INTEGER	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_F90_INTEGER,$/;"	e	enum:__anon4
+MPI_COMBINER_F90_REAL	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_F90_REAL,$/;"	e	enum:__anon4
+MPI_COMBINER_HINDEXED	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_HINDEXED,$/;"	e	enum:__anon4
+MPI_COMBINER_HINDEXED_INTEGER	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_HINDEXED_INTEGER,$/;"	e	enum:__anon4
+MPI_COMBINER_HVECTOR	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_HVECTOR,$/;"	e	enum:__anon4
+MPI_COMBINER_HVECTOR_INTEGER	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_HVECTOR_INTEGER,$/;"	e	enum:__anon4
+MPI_COMBINER_INDEXED	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_INDEXED,$/;"	e	enum:__anon4
+MPI_COMBINER_INDEXED_BLOCK	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_INDEXED_BLOCK,$/;"	e	enum:__anon4
+MPI_COMBINER_NAMED	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_NAMED,$/;"	e	enum:__anon4
+MPI_COMBINER_RESIZED	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_RESIZED$/;"	e	enum:__anon4
+MPI_COMBINER_STRUCT	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_STRUCT,$/;"	e	enum:__anon4
+MPI_COMBINER_STRUCT_INTEGER	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_STRUCT_INTEGER,$/;"	e	enum:__anon4
+MPI_COMBINER_SUBARRAY	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_SUBARRAY,$/;"	e	enum:__anon4
+MPI_COMBINER_VECTOR	/usr/lib/openmpi/include/mpi.h	/^  MPI_COMBINER_VECTOR,$/;"	e	enum:__anon4
+MPI_COMM_DUP_FN	/usr/lib/openmpi/include/mpi.h	541;"	d
+MPI_COMM_DUP_FN	/usr/lib/openmpi/include/mpif.h	/^      external MPI_DUP_FN, MPI_COMM_DUP_FN, MPI_TYPE_DUP_FN$/;"	v
+MPI_COMM_NULL	/usr/lib/openmpi/include/mpi.h	501;"	d
+MPI_COMM_NULL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_GROUP_NULL, MPI_COMM_NULL, MPI_DATATYPE_NULL$/;"	v
+MPI_COMM_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	540;"	d
+MPI_COMM_NULL_COPY_FN	/usr/lib/openmpi/include/mpif.h	/^      external MPI_COMM_NULL_COPY_FN, MPI_COMM_NULL_DELETE_FN$/;"	v
+MPI_COMM_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	539;"	d
+MPI_COMM_SELF	/usr/lib/openmpi/include/mpi.h	737;"	d
+MPI_COMM_WORLD	/usr/lib/openmpi/include/mpi.h	736;"	d
+MPI_COMM_WORLD	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_COMM_WORLD, MPI_COMM_SELF$/;"	v
+MPI_COMPLEX	/usr/lib/openmpi/include/mpi.h	830;"	d
+MPI_COMPLEX	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_COMPLEX, MPI_COMPLEX8, MPI_COMPLEX16, MPI_COMPLEX32$/;"	v
+MPI_COMPLEX16	/usr/lib/openmpi/include/mpi.h	835;"	d
+MPI_COMPLEX16	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_COMPLEX, MPI_COMPLEX8, MPI_COMPLEX16, MPI_COMPLEX32$/;"	v
+MPI_COMPLEX32	/usr/lib/openmpi/include/mpi.h	838;"	d
+MPI_COMPLEX8	/usr/lib/openmpi/include/mpi.h	832;"	d
+MPI_COMPLEX8	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_COMPLEX, MPI_COMPLEX8, MPI_COMPLEX16, MPI_COMPLEX32$/;"	v
+MPI_CONGRUENT	/usr/lib/openmpi/include/mpi.h	/^  MPI_CONGRUENT,$/;"	e	enum:__anon2
+MPI_CONGRUENT	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_IDENT, MPI_CONGRUENT, MPI_SIMILAR, MPI_UNEQUAL$/;"	v
+MPI_CONVERSION_FN_NULL	/usr/lib/openmpi/include/mpi.h	554;"	d
+MPI_Cancel	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cancel(MPI_Request *request);$/;"	p
+MPI_Cart_coords	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_coords(MPI_Comm comm, int rank, int maxdims, int *coords);$/;"	p
+MPI_Cart_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_create(MPI_Comm old_comm, int ndims, int *dims, $/;"	p
+MPI_Cart_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_get(MPI_Comm comm, int maxdims, int *dims, $/;"	p
+MPI_Cart_map	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_map(MPI_Comm comm, int ndims, int *dims, $/;"	p
+MPI_Cart_rank	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_rank(MPI_Comm comm, int *coords, int *rank);$/;"	p
+MPI_Cart_shift	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_shift(MPI_Comm comm, int direction, int disp, $/;"	p
+MPI_Cart_sub	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cart_sub(MPI_Comm comm, int *remain_dims, MPI_Comm *new_comm);$/;"	p
+MPI_Cartdim_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Cartdim_get(MPI_Comm comm, int *ndims);$/;"	p
+MPI_Close_port	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Close_port(char *port_name);$/;"	p
+MPI_Comm	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_communicator_t *MPI_Comm;$/;"	t	typeref:struct:ompi_communicator_t
+MPI_Comm_accept	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_accept(char *port_name, MPI_Info info, int root, $/;"	p
+MPI_Comm_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Comm_c2f(MPI_Comm comm);$/;"	p
+MPI_Comm_call_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_call_errhandler(MPI_Comm comm, int errorcode);$/;"	p
+MPI_Comm_compare	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_compare(MPI_Comm comm1, MPI_Comm comm2, int *result);$/;"	p
+MPI_Comm_connect	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_connect(char *port_name, MPI_Info info, int root, $/;"	p
+MPI_Comm_copy_attr_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Comm_copy_attr_function)(MPI_Comm, int, void *,$/;"	t
+MPI_Comm_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_create(MPI_Comm comm, MPI_Group group, MPI_Comm *newcomm);$/;"	p
+MPI_Comm_create_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_create_errhandler(MPI_Comm_errhandler_fn *function, $/;"	p
+MPI_Comm_create_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_create_keyval(MPI_Comm_copy_attr_function *comm_copy_attr_fn, $/;"	p
+MPI_Comm_delete_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_delete_attr(MPI_Comm comm, int comm_keyval);$/;"	p
+MPI_Comm_delete_attr_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Comm_delete_attr_function)(MPI_Comm, int, void *, void *);$/;"	t
+MPI_Comm_disconnect	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_disconnect(MPI_Comm *comm);$/;"	p
+MPI_Comm_dup	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_dup(MPI_Comm comm, MPI_Comm *newcomm);$/;"	p
+MPI_Comm_errhandler_fn	/usr/lib/openmpi/include/mpi.h	/^typedef void (MPI_Comm_errhandler_fn)(MPI_Comm *, int *, ...);$/;"	t
+MPI_Comm_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Comm MPI_Comm_f2c(MPI_Fint comm);$/;"	p
+MPI_Comm_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_free(MPI_Comm *comm);$/;"	p
+MPI_Comm_free_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_free_keyval(int *comm_keyval);$/;"	p
+MPI_Comm_get_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_get_attr(MPI_Comm comm, int comm_keyval, $/;"	p
+MPI_Comm_get_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_get_errhandler(MPI_Comm comm, MPI_Errhandler *erhandler);$/;"	p
+MPI_Comm_get_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_get_name(MPI_Comm comm, char *comm_name, int *resultlen);$/;"	p
+MPI_Comm_get_parent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_get_parent(MPI_Comm *parent);$/;"	p
+MPI_Comm_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_group(MPI_Comm comm, MPI_Group *group);$/;"	p
+MPI_Comm_join	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_join(int fd, MPI_Comm *intercomm);$/;"	p
+MPI_Comm_rank	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_rank(MPI_Comm comm, int *rank);$/;"	p
+MPI_Comm_remote_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_remote_group(MPI_Comm comm, MPI_Group *group);$/;"	p
+MPI_Comm_remote_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_remote_size(MPI_Comm comm, int *size);$/;"	p
+MPI_Comm_set_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_set_attr(MPI_Comm comm, int comm_keyval, void *attribute_val);$/;"	p
+MPI_Comm_set_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_set_errhandler(MPI_Comm comm, MPI_Errhandler errhandler);$/;"	p
+MPI_Comm_set_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_set_name(MPI_Comm comm, char *comm_name);$/;"	p
+MPI_Comm_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_size(MPI_Comm comm, int *size);$/;"	p
+MPI_Comm_spawn	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_spawn(char *command, char **argv, int maxprocs, MPI_Info info, $/;"	p
+MPI_Comm_spawn_multiple	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_spawn_multiple(int count, char **array_of_commands, char ***array_of_argv, $/;"	p
+MPI_Comm_split	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_split(MPI_Comm comm, int color, int key, MPI_Comm *newcomm);$/;"	p
+MPI_Comm_test_inter	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Comm_test_inter(MPI_Comm comm, int *flag);$/;"	p
+MPI_Copy_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Copy_function)(MPI_Comm, int, void *,$/;"	t
+MPI_DATATYPE_NULL	/usr/lib/openmpi/include/mpi.h	756;"	d
+MPI_DISPLACEMENT_CURRENT	/usr/lib/openmpi/include/mpi.h	335;"	d
+MPI_DISTRIBUTE_BLOCK	/usr/lib/openmpi/include/mpi.h	314;"	d
+MPI_DISTRIBUTE_BLOCK	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_DISTRIBUTE_BLOCK, MPI_DISTRIBUTE_CYCLIC$/;"	v
+MPI_DISTRIBUTE_CYCLIC	/usr/lib/openmpi/include/mpi.h	315;"	d
+MPI_DISTRIBUTE_DFLT_DARG	/usr/lib/openmpi/include/mpi.h	317;"	d
+MPI_DISTRIBUTE_NONE	/usr/lib/openmpi/include/mpi.h	316;"	d
+MPI_DISTRIBUTE_NONE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_DISTRIBUTE_NONE, MPI_DISTRIBUTE_DFLT_DARG$/;"	v
+MPI_DOUBLE	/usr/lib/openmpi/include/mpi.h	764;"	d
+MPI_DOUBLE_COMPLEX	/usr/lib/openmpi/include/mpi.h	840;"	d
+MPI_DOUBLE_INT	/usr/lib/openmpi/include/mpi.h	772;"	d
+MPI_DOUBLE_PRECISION	/usr/lib/openmpi/include/mpi.h	829;"	d
+MPI_DUP_FN	/usr/lib/openmpi/include/mpi.h	533;"	d
+MPI_DUP_FN	/usr/lib/openmpi/include/mpif.h	/^      external MPI_DUP_FN, MPI_COMM_DUP_FN, MPI_TYPE_DUP_FN$/;"	v
+MPI_Datarep_conversion_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Datarep_conversion_function)(void *, MPI_Datatype, $/;"	t
+MPI_Datarep_extent_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Datarep_extent_function)(MPI_Datatype, MPI_Aint *, void *);$/;"	t
+MPI_Datatype	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_datatype_t *MPI_Datatype;$/;"	t	typeref:struct:ompi_datatype_t
+MPI_Delete_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Delete_function)(MPI_Comm, int, void *, void *);$/;"	t
+MPI_Dims_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Dims_create(int nnodes, int ndims, int *dims);$/;"	p
+MPI_ERRCODES_IGNORE	/usr/lib/openmpi/include/mpi.h	309;"	d
+MPI_ERRHANDLER_NULL	/usr/lib/openmpi/include/mpi.h	504;"	d
+MPI_ERROR	/usr/lib/openmpi/include/mpi.h	/^  int MPI_ERROR;$/;"	m	struct:ompi_status_public_t
+MPI_ERRORS_ARE_FATAL	/usr/lib/openmpi/include/mpi.h	845;"	d
+MPI_ERRORS_ARE_FATAL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_ERRORS_ARE_FATAL, MPI_ERRORS_RETURN$/;"	v
+MPI_ERRORS_RETURN	/usr/lib/openmpi/include/mpi.h	846;"	d
+MPI_ERR_ACCESS	/usr/lib/openmpi/include/mpi.h	410;"	d
+MPI_ERR_AMODE	/usr/lib/openmpi/include/mpi.h	411;"	d
+MPI_ERR_ARG	/usr/lib/openmpi/include/mpi.h	403;"	d
+MPI_ERR_ASSERT	/usr/lib/openmpi/include/mpi.h	412;"	d
+MPI_ERR_BAD_FILE	/usr/lib/openmpi/include/mpi.h	413;"	d
+MPI_ERR_BASE	/usr/lib/openmpi/include/mpi.h	414;"	d
+MPI_ERR_BUFFER	/usr/lib/openmpi/include/mpi.h	391;"	d
+MPI_ERR_COMM	/usr/lib/openmpi/include/mpi.h	395;"	d
+MPI_ERR_CONVERSION	/usr/lib/openmpi/include/mpi.h	415;"	d
+MPI_ERR_COUNT	/usr/lib/openmpi/include/mpi.h	392;"	d
+MPI_ERR_DIMS	/usr/lib/openmpi/include/mpi.h	402;"	d
+MPI_ERR_DISP	/usr/lib/openmpi/include/mpi.h	416;"	d
+MPI_ERR_DUP_DATAREP	/usr/lib/openmpi/include/mpi.h	417;"	d
+MPI_ERR_FILE	/usr/lib/openmpi/include/mpi.h	420;"	d
+MPI_ERR_FILE_EXISTS	/usr/lib/openmpi/include/mpi.h	418;"	d
+MPI_ERR_FILE_IN_USE	/usr/lib/openmpi/include/mpi.h	419;"	d
+MPI_ERR_GROUP	/usr/lib/openmpi/include/mpi.h	399;"	d
+MPI_ERR_INFO	/usr/lib/openmpi/include/mpi.h	424;"	d
+MPI_ERR_INFO_KEY	/usr/lib/openmpi/include/mpi.h	421;"	d
+MPI_ERR_INFO_NOKEY	/usr/lib/openmpi/include/mpi.h	422;"	d
+MPI_ERR_INFO_VALUE	/usr/lib/openmpi/include/mpi.h	423;"	d
+MPI_ERR_INTERN	/usr/lib/openmpi/include/mpi.h	407;"	d
+MPI_ERR_IN_STATUS	/usr/lib/openmpi/include/mpi.h	408;"	d
+MPI_ERR_IO	/usr/lib/openmpi/include/mpi.h	425;"	d
+MPI_ERR_KEYVAL	/usr/lib/openmpi/include/mpi.h	426;"	d
+MPI_ERR_LASTCODE	/usr/lib/openmpi/include/mpi.h	444;"	d
+MPI_ERR_LOCKTYPE	/usr/lib/openmpi/include/mpi.h	427;"	d
+MPI_ERR_NAME	/usr/lib/openmpi/include/mpi.h	428;"	d
+MPI_ERR_NOT_SAME	/usr/lib/openmpi/include/mpi.h	430;"	d
+MPI_ERR_NO_MEM	/usr/lib/openmpi/include/mpi.h	429;"	d
+MPI_ERR_NO_SPACE	/usr/lib/openmpi/include/mpi.h	431;"	d
+MPI_ERR_NO_SUCH_FILE	/usr/lib/openmpi/include/mpi.h	432;"	d
+MPI_ERR_OP	/usr/lib/openmpi/include/mpi.h	400;"	d
+MPI_ERR_OTHER	/usr/lib/openmpi/include/mpi.h	406;"	d
+MPI_ERR_PENDING	/usr/lib/openmpi/include/mpi.h	409;"	d
+MPI_ERR_PORT	/usr/lib/openmpi/include/mpi.h	433;"	d
+MPI_ERR_QUOTA	/usr/lib/openmpi/include/mpi.h	434;"	d
+MPI_ERR_RANK	/usr/lib/openmpi/include/mpi.h	396;"	d
+MPI_ERR_READ_ONLY	/usr/lib/openmpi/include/mpi.h	435;"	d
+MPI_ERR_REQUEST	/usr/lib/openmpi/include/mpi.h	397;"	d
+MPI_ERR_RMA_CONFLICT	/usr/lib/openmpi/include/mpi.h	436;"	d
+MPI_ERR_RMA_SYNC	/usr/lib/openmpi/include/mpi.h	437;"	d
+MPI_ERR_ROOT	/usr/lib/openmpi/include/mpi.h	398;"	d
+MPI_ERR_SERVICE	/usr/lib/openmpi/include/mpi.h	438;"	d
+MPI_ERR_SIZE	/usr/lib/openmpi/include/mpi.h	439;"	d
+MPI_ERR_SPAWN	/usr/lib/openmpi/include/mpi.h	440;"	d
+MPI_ERR_SYSRESOURCE	/usr/lib/openmpi/include/mpi.h	446;"	d
+MPI_ERR_TAG	/usr/lib/openmpi/include/mpi.h	394;"	d
+MPI_ERR_TOPOLOGY	/usr/lib/openmpi/include/mpi.h	401;"	d
+MPI_ERR_TRUNCATE	/usr/lib/openmpi/include/mpi.h	405;"	d
+MPI_ERR_TYPE	/usr/lib/openmpi/include/mpi.h	393;"	d
+MPI_ERR_UNKNOWN	/usr/lib/openmpi/include/mpi.h	404;"	d
+MPI_ERR_UNSUPPORTED_DATAREP	/usr/lib/openmpi/include/mpi.h	441;"	d
+MPI_ERR_UNSUPPORTED_OPERATION	/usr/lib/openmpi/include/mpi.h	442;"	d
+MPI_ERR_WIN	/usr/lib/openmpi/include/mpi.h	443;"	d
+MPI_Errhandler	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_errhandler_t *MPI_Errhandler;$/;"	t	typeref:struct:ompi_errhandler_t
+MPI_Errhandler_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Errhandler_c2f(MPI_Errhandler errhandler);$/;"	p
+MPI_Errhandler_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Errhandler_create(MPI_Handler_function *function, $/;"	p
+MPI_Errhandler_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Errhandler MPI_Errhandler_f2c(MPI_Fint errhandler);$/;"	p
+MPI_Errhandler_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Errhandler_free(MPI_Errhandler *errhandler);$/;"	p
+MPI_Errhandler_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Errhandler_get(MPI_Comm comm, MPI_Errhandler *errhandler);$/;"	p
+MPI_Errhandler_set	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Errhandler_set(MPI_Comm comm, MPI_Errhandler errhandler);$/;"	p
+MPI_Error_class	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Error_class(int errorcode, int *errorclass);$/;"	p
+MPI_Error_string	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Error_string(int errorcode, char *string, int *resultlen);$/;"	p
+MPI_Exscan	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Exscan(void *sendbuf, void *recvbuf, int count, $/;"	p
+MPI_FILE_NULL	/usr/lib/openmpi/include/mpi.h	508;"	d
+MPI_FLOAT	/usr/lib/openmpi/include/mpi.h	763;"	d
+MPI_FLOAT_INT	/usr/lib/openmpi/include/mpi.h	771;"	d
+MPI_F_STATUSES_IGNORE	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern MPI_Fint *MPI_F_STATUSES_IGNORE;$/;"	x
+MPI_F_STATUS_IGNORE	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern MPI_Fint *MPI_F_STATUS_IGNORE;$/;"	x
+MPI_File	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_file_t *MPI_File;$/;"	t	typeref:struct:ompi_file_t
+MPI_File_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_File_c2f(MPI_File file);$/;"	p
+MPI_File_call_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_call_errhandler(MPI_File fh, int errorcode);$/;"	p
+MPI_File_close	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_close(MPI_File *fh);$/;"	p
+MPI_File_create_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_create_errhandler(MPI_File_errhandler_fn *function,$/;"	p
+MPI_File_delete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_delete(char *filename, MPI_Info info);$/;"	p
+MPI_File_errhandler_fn	/usr/lib/openmpi/include/mpi.h	/^typedef ompi_file_errhandler_fn MPI_File_errhandler_fn;$/;"	t
+MPI_File_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_File MPI_File_f2c(MPI_Fint file);$/;"	p
+MPI_File_get_amode	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_amode(MPI_File fh, int *amode);$/;"	p
+MPI_File_get_atomicity	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_atomicity(MPI_File fh, int *flag);$/;"	p
+MPI_File_get_byte_offset	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_byte_offset(MPI_File fh, MPI_Offset offset,$/;"	p
+MPI_File_get_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_errhandler( MPI_File file, MPI_Errhandler *errhandler);$/;"	p
+MPI_File_get_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_group(MPI_File fh, MPI_Group *group);$/;"	p
+MPI_File_get_info	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_info(MPI_File fh, MPI_Info *info_used);$/;"	p
+MPI_File_get_position	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_position(MPI_File fh, MPI_Offset *offset);$/;"	p
+MPI_File_get_position_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_position_shared(MPI_File fh, MPI_Offset *offset);$/;"	p
+MPI_File_get_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_size(MPI_File fh, MPI_Offset *size);$/;"	p
+MPI_File_get_type_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_type_extent(MPI_File fh, MPI_Datatype datatype,$/;"	p
+MPI_File_get_view	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_get_view(MPI_File fh, MPI_Offset *disp,$/;"	p
+MPI_File_iread	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_iread(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_iread_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_iread_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_iread_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_iread_shared(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_iwrite	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_iwrite(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_iwrite_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_iwrite_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_iwrite_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_iwrite_shared(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_open	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_open(MPI_Comm comm, char *filename, int amode,$/;"	p
+MPI_File_preallocate	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_preallocate(MPI_File fh, MPI_Offset size);$/;"	p
+MPI_File_read	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_read_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_all(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_read_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_all_begin(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_read_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+MPI_File_read_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_read_at_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_at_all(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_read_at_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_at_all_begin(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_read_at_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_at_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+MPI_File_read_ordered	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_ordered(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_read_ordered_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_ordered_begin(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_read_ordered_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_ordered_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+MPI_File_read_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_read_shared(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_seek	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_seek(MPI_File fh, MPI_Offset offset, int whence);$/;"	p
+MPI_File_seek_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_seek_shared(MPI_File fh, MPI_Offset offset, int whence);$/;"	p
+MPI_File_set_atomicity	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_set_atomicity(MPI_File fh, int flag);$/;"	p
+MPI_File_set_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_set_errhandler( MPI_File file, MPI_Errhandler errhandler);$/;"	p
+MPI_File_set_info	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_set_info(MPI_File fh, MPI_Info info);$/;"	p
+MPI_File_set_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_set_size(MPI_File fh, MPI_Offset size);$/;"	p
+MPI_File_set_view	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_set_view(MPI_File fh, MPI_Offset disp, MPI_Datatype etype,$/;"	p
+MPI_File_sync	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_sync(MPI_File fh);$/;"	p
+MPI_File_write	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_write_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_all(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_write_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_all_begin(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_write_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+MPI_File_write_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_write_at_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_at_all(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_write_at_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_at_all_begin(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+MPI_File_write_at_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_at_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+MPI_File_write_ordered	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_ordered(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_write_ordered_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_ordered_begin(MPI_File fh, void *buf, int count,$/;"	p
+MPI_File_write_ordered_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_ordered_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+MPI_File_write_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_File_write_shared(MPI_File fh, void *buf, int count,$/;"	p
+MPI_Finalize	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Finalize(void);$/;"	p
+MPI_Finalized	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Finalized(int *flag);$/;"	p
+MPI_Fint	/usr/lib/openmpi/include/mpi.h	158;"	d
+MPI_Free_mem	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Free_mem(void *base);$/;"	p
+MPI_GRAPH	/usr/lib/openmpi/include/mpi.h	296;"	d
+MPI_GRAPH	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_CART, MPI_GRAPH, MPI_KEYVAL_INVALID$/;"	v
+MPI_GROUP_EMPTY	/usr/lib/openmpi/include/mpi.h	739;"	d
+MPI_GROUP_NULL	/usr/lib/openmpi/include/mpi.h	500;"	d
+MPI_GROUP_NULL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_GROUP_NULL, MPI_COMM_NULL, MPI_DATATYPE_NULL$/;"	v
+MPI_Gather	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Gather(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Gatherv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Gatherv(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Get(void *origin_addr, int origin_count, $/;"	p
+MPI_Get_address	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Get_address(void *location, MPI_Aint *address);$/;"	p
+MPI_Get_count	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Get_count(MPI_Status *status, MPI_Datatype datatype, int *count);$/;"	p
+MPI_Get_elements	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Get_elements(MPI_Status *status, MPI_Datatype datatype, int *count);$/;"	p
+MPI_Get_processor_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Get_processor_name(char *name, int *resultlen);$/;"	p
+MPI_Get_version	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Get_version(int *version, int *subversion);$/;"	p
+MPI_Graph_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Graph_create(MPI_Comm comm_old, int nnodes, int *index, $/;"	p
+MPI_Graph_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Graph_get(MPI_Comm comm, int maxindex, int maxedges, $/;"	p
+MPI_Graph_map	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Graph_map(MPI_Comm comm, int nnodes, int *index, int *edges, $/;"	p
+MPI_Graph_neighbors	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Graph_neighbors(MPI_Comm comm, int rank, int maxneighbors, $/;"	p
+MPI_Graph_neighbors_count	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Graph_neighbors_count(MPI_Comm comm, int rank, int *nneighbors);$/;"	p
+MPI_Graphdims_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Graphdims_get(MPI_Comm comm, int *nnodes, int *nedges);$/;"	p
+MPI_Grequest_cancel_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Grequest_cancel_function)(void *, int); $/;"	t
+MPI_Grequest_complete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Grequest_complete(MPI_Request request);$/;"	p
+MPI_Grequest_free_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Grequest_free_function)(void *);$/;"	t
+MPI_Grequest_query_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Grequest_query_function)(void *, MPI_Status *);$/;"	t
+MPI_Grequest_start	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Grequest_start(MPI_Grequest_query_function *query_fn,$/;"	p
+MPI_Group	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_group_t *MPI_Group;$/;"	t	typeref:struct:ompi_group_t
+MPI_Group_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Group_c2f(MPI_Group group);$/;"	p
+MPI_Group_compare	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_compare(MPI_Group group1, MPI_Group group2, int *result);$/;"	p
+MPI_Group_difference	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_difference(MPI_Group group1, MPI_Group group2, $/;"	p
+MPI_Group_excl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_excl(MPI_Group group, int n, int *ranks, $/;"	p
+MPI_Group_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Group MPI_Group_f2c(MPI_Fint group);$/;"	p
+MPI_Group_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_free(MPI_Group *group);$/;"	p
+MPI_Group_incl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_incl(MPI_Group group, int n, int *ranks, $/;"	p
+MPI_Group_intersection	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_intersection(MPI_Group group1, MPI_Group group2, $/;"	p
+MPI_Group_range_excl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_range_excl(MPI_Group group, int n, int ranges[][3], $/;"	p
+MPI_Group_range_incl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_range_incl(MPI_Group group, int n, int ranges[][3], $/;"	p
+MPI_Group_rank	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_rank(MPI_Group group, int *rank);$/;"	p
+MPI_Group_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_size(MPI_Group group, int *size);$/;"	p
+MPI_Group_translate_ranks	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_translate_ranks(MPI_Group group1, int n, int *ranks1, $/;"	p
+MPI_Group_union	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Group_union(MPI_Group group1, MPI_Group group2, $/;"	p
+MPI_HOST	/usr/lib/openmpi/include/mpi.h	/^    MPI_HOST,$/;"	e	enum:__anon1
+MPI_HOST	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_TAG_UB, MPI_HOST, MPI_IO, MPI_WTIME_IS_GLOBAL$/;"	v
+MPI_Handler_function	/usr/lib/openmpi/include/mpi.h	/^typedef void (MPI_Handler_function)(MPI_Comm *, int *, ...);$/;"	t
+MPI_IDENT	/usr/lib/openmpi/include/mpi.h	/^  MPI_IDENT,$/;"	e	enum:__anon2
+MPI_IDENT	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_IDENT, MPI_CONGRUENT, MPI_SIMILAR, MPI_UNEQUAL$/;"	v
+MPI_INFO_NULL	/usr/lib/openmpi/include/mpi.h	505;"	d
+MPI_INFO_NULL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_INFO_NULL, MPI_WIN_NULL$/;"	v
+MPI_INT	/usr/lib/openmpi/include/mpi.h	761;"	d
+MPI_INTEGER	/usr/lib/openmpi/include/mpi.h	803;"	d
+MPI_INTEGER	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_INTEGER, MPI_INTEGER1, MPI_INTEGER2, MPI_INTEGER4$/;"	v
+MPI_INTEGER1	/usr/lib/openmpi/include/mpi.h	805;"	d
+MPI_INTEGER1	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_INTEGER, MPI_INTEGER1, MPI_INTEGER2, MPI_INTEGER4$/;"	v
+MPI_INTEGER16	/usr/lib/openmpi/include/mpi.h	817;"	d
+MPI_INTEGER2	/usr/lib/openmpi/include/mpi.h	808;"	d
+MPI_INTEGER2	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_INTEGER, MPI_INTEGER1, MPI_INTEGER2, MPI_INTEGER4$/;"	v
+MPI_INTEGER4	/usr/lib/openmpi/include/mpi.h	811;"	d
+MPI_INTEGER8	/usr/lib/openmpi/include/mpi.h	814;"	d
+MPI_INTEGER8	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_INTEGER8, MPI_INTEGER16$/;"	v
+MPI_IN_PLACE	/usr/lib/openmpi/include/mpi.h	303;"	d
+MPI_IO	/usr/lib/openmpi/include/mpi.h	/^    MPI_IO,$/;"	e	enum:__anon1
+MPI_IO	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_TAG_UB, MPI_HOST, MPI_IO, MPI_WTIME_IS_GLOBAL$/;"	v
+MPI_Ibsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Ibsend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_Info	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_info_t *MPI_Info;$/;"	t	typeref:struct:ompi_info_t
+MPI_Info_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Info_c2f(MPI_Info info);$/;"	p
+MPI_Info_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_create(MPI_Info *info);$/;"	p
+MPI_Info_delete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_delete(MPI_Info info, char *key);$/;"	p
+MPI_Info_dup	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_dup(MPI_Info info, MPI_Info *newinfo);$/;"	p
+MPI_Info_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Info MPI_Info_f2c(MPI_Fint info);$/;"	p
+MPI_Info_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_free(MPI_Info *info);$/;"	p
+MPI_Info_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_get(MPI_Info info, char *key, int valuelen, $/;"	p
+MPI_Info_get_nkeys	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_get_nkeys(MPI_Info info, int *nkeys);$/;"	p
+MPI_Info_get_nthkey	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_get_nthkey(MPI_Info info, int n, char *key);$/;"	p
+MPI_Info_get_valuelen	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_get_valuelen(MPI_Info info, char *key, int *valuelen, $/;"	p
+MPI_Info_set	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Info_set(MPI_Info info, char *key, char *value);$/;"	p
+MPI_Init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Init(int *argc, char ***argv);$/;"	p
+MPI_Init_thread	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Init_thread(int *argc, char ***argv, int required, $/;"	p
+MPI_Initialized	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Initialized(int *flag);$/;"	p
+MPI_Intercomm_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Intercomm_create(MPI_Comm local_comm, int local_leader, $/;"	p
+MPI_Intercomm_merge	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Intercomm_merge(MPI_Comm intercomm, int high, $/;"	p
+MPI_Iprobe	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Iprobe(int source, int tag, MPI_Comm comm, int *flag, $/;"	p
+MPI_Irecv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source, $/;"	p
+MPI_Irsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Irsend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_Is_thread_main	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Is_thread_main(int *flag);$/;"	p
+MPI_Isend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_Issend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Issend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_KEYVAL_INVALID	/usr/lib/openmpi/include/mpi.h	297;"	d
+MPI_Keyval_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Keyval_create(MPI_Copy_function *copy_fn, $/;"	p
+MPI_Keyval_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Keyval_free(int *keyval);$/;"	p
+MPI_LAND	/usr/lib/openmpi/include/mpi.h	745;"	d
+MPI_LASTUSEDCODE	/usr/lib/openmpi/include/mpi.h	/^    MPI_LASTUSEDCODE,$/;"	e	enum:__anon1
+MPI_LASTUSEDCODE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_APPNUM, MPI_LASTUSEDCODE, MPI_UNIVERSE_SIZE$/;"	v
+MPI_LB	/usr/lib/openmpi/include/mpi.h	778;"	d
+MPI_LOCK_EXCLUSIVE	/usr/lib/openmpi/include/mpi.h	353;"	d
+MPI_LOCK_EXCLUSIVE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_LOCK_EXCLUSIVE, MPI_LOCK_SHARED$/;"	v
+MPI_LOCK_SHARED	/usr/lib/openmpi/include/mpi.h	354;"	d
+MPI_LOGICAL	/usr/lib/openmpi/include/mpi.h	790;"	d
+MPI_LOGICAL1	/usr/lib/openmpi/include/mpi.h	792;"	d
+MPI_LOGICAL1	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_LOGICAL1, MPI_LOGICAL2, MPI_LOGICAL4, MPI_LOGICAL8$/;"	v
+MPI_LOGICAL2	/usr/lib/openmpi/include/mpi.h	795;"	d
+MPI_LOGICAL2	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_LOGICAL1, MPI_LOGICAL2, MPI_LOGICAL4, MPI_LOGICAL8$/;"	v
+MPI_LOGICAL4	/usr/lib/openmpi/include/mpi.h	798;"	d
+MPI_LOGICAL4	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_LOGICAL1, MPI_LOGICAL2, MPI_LOGICAL4, MPI_LOGICAL8$/;"	v
+MPI_LOGICAL8	/usr/lib/openmpi/include/mpi.h	801;"	d
+MPI_LONG	/usr/lib/openmpi/include/mpi.h	762;"	d
+MPI_LONG_DOUBLE	/usr/lib/openmpi/include/mpi.h	765;"	d
+MPI_LONG_DOUBLE_INT	/usr/lib/openmpi/include/mpi.h	773;"	d
+MPI_LONG_INT	/usr/lib/openmpi/include/mpi.h	774;"	d
+MPI_LONG_LONG	/usr/lib/openmpi/include/mpi.h	782;"	d
+MPI_LONG_LONG_INT	/usr/lib/openmpi/include/mpi.h	781;"	d
+MPI_LOR	/usr/lib/openmpi/include/mpi.h	747;"	d
+MPI_LOR	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BAND, MPI_LOR, MPI_BOR, MPI_LXOR, MPI_BXOR$/;"	v
+MPI_LXOR	/usr/lib/openmpi/include/mpi.h	749;"	d
+MPI_LXOR	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BAND, MPI_LOR, MPI_BOR, MPI_LXOR, MPI_BXOR$/;"	v
+MPI_Lookup_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Lookup_name(char *service_name, MPI_Info info, char *port_name);$/;"	p
+MPI_MAX	/usr/lib/openmpi/include/mpi.h	741;"	d
+MPI_MAX	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND$/;"	v
+MPI_MAXLOC	/usr/lib/openmpi/include/mpi.h	751;"	d
+MPI_MAXLOC	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAXLOC, MPI_MINLOC, MPI_REPLACE$/;"	v
+MPI_MAX_DATAREP_STRING	/usr/lib/openmpi/include/mpi.h	341;"	d
+MPI_MAX_ERROR_STRING	/usr/lib/openmpi/include/mpi.h	292;"	d
+MPI_MAX_ERROR_STRING	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX_ERROR_STRING, MPI_UNDEFINED$/;"	v
+MPI_MAX_INFO_KEY	/usr/lib/openmpi/include/mpi.h	305;"	d
+MPI_MAX_INFO_KEY	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX_INFO_KEY, MPI_MAX_INFO_VAL$/;"	v
+MPI_MAX_INFO_VAL	/usr/lib/openmpi/include/mpi.h	306;"	d
+MPI_MAX_NAME_LEN	/usr/lib/openmpi/include/mpi.h	311;"	d
+MPI_MAX_OBJECT_NAME	/usr/lib/openmpi/include/mpi.h	293;"	d
+MPI_MAX_PORT_NAME	/usr/lib/openmpi/include/mpi.h	310;"	d
+MPI_MAX_PORT_NAME	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX_PORT_NAME, MPI_MAX_OBJECT_NAME$/;"	v
+MPI_MAX_PROCESSOR_NAME	/usr/lib/openmpi/include/mpi.h	291;"	d
+MPI_MIN	/usr/lib/openmpi/include/mpi.h	742;"	d
+MPI_MIN	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND$/;"	v
+MPI_MINLOC	/usr/lib/openmpi/include/mpi.h	752;"	d
+MPI_MINLOC	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAXLOC, MPI_MINLOC, MPI_REPLACE$/;"	v
+MPI_MODE_APPEND	/usr/lib/openmpi/include/mpi.h	332;"	d
+MPI_MODE_APPEND	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_MODE_EXCL, MPI_MODE_APPEND, MPI_MODE_SEQUENTIAL$/;"	v
+MPI_MODE_CREATE	/usr/lib/openmpi/include/mpi.h	325;"	d
+MPI_MODE_DELETE_ON_CLOSE	/usr/lib/openmpi/include/mpi.h	329;"	d
+MPI_MODE_DELETE_ON_CLOSE	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_MODE_DELETE_ON_CLOSE, MPI_MODE_UNIQUE_OPEN$/;"	v
+MPI_MODE_EXCL	/usr/lib/openmpi/include/mpi.h	331;"	d
+MPI_MODE_EXCL	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_MODE_EXCL, MPI_MODE_APPEND, MPI_MODE_SEQUENTIAL$/;"	v
+MPI_MODE_NOCHECK	/usr/lib/openmpi/include/mpi.h	347;"	d
+MPI_MODE_NOCHECK	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MODE_NOCHECK, MPI_MODE_NOPRECEDE, MPI_MODE_NOPUT$/;"	v
+MPI_MODE_NOPRECEDE	/usr/lib/openmpi/include/mpi.h	348;"	d
+MPI_MODE_NOPRECEDE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MODE_NOCHECK, MPI_MODE_NOPRECEDE, MPI_MODE_NOPUT$/;"	v
+MPI_MODE_NOPUT	/usr/lib/openmpi/include/mpi.h	349;"	d
+MPI_MODE_NOSTORE	/usr/lib/openmpi/include/mpi.h	350;"	d
+MPI_MODE_NOSTORE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MODE_NOSTORE, MPI_MODE_NOSUCCEED$/;"	v
+MPI_MODE_NOSUCCEED	/usr/lib/openmpi/include/mpi.h	351;"	d
+MPI_MODE_RDONLY	/usr/lib/openmpi/include/mpi.h	326;"	d
+MPI_MODE_RDONLY	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_MODE_RDONLY, MPI_MODE_WRONLY, MPI_MODE_RDWR$/;"	v
+MPI_MODE_RDWR	/usr/lib/openmpi/include/mpi.h	328;"	d
+MPI_MODE_SEQUENTIAL	/usr/lib/openmpi/include/mpi.h	333;"	d
+MPI_MODE_UNIQUE_OPEN	/usr/lib/openmpi/include/mpi.h	330;"	d
+MPI_MODE_WRONLY	/usr/lib/openmpi/include/mpi.h	327;"	d
+MPI_MODE_WRONLY	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_MODE_RDONLY, MPI_MODE_WRONLY, MPI_MODE_RDWR$/;"	v
+MPI_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	532;"	d
+MPI_NULL_COPY_FN	/usr/lib/openmpi/include/mpif.h	/^      external MPI_NULL_COPY_FN, MPI_NULL_DELETE_FN$/;"	v
+MPI_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	531;"	d
+MPI_OFFSET_KIND	/usr/lib/openmpi/include/mpif-config.h	/^      integer MPI_OFFSET_KIND, MPI_ADDRESS_KIND, MPI_INTEGER_KIND$/;"	v
+MPI_OP_NULL	/usr/lib/openmpi/include/mpi.h	503;"	d
+MPI_OP_NULL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_REQUEST_NULL, MPI_OP_NULL, MPI_ERRHANDLER_NULL$/;"	v
+MPI_ORDER_C	/usr/lib/openmpi/include/mpi.h	312;"	d
+MPI_ORDER_C	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_ORDER_C, MPI_ORDER_FORTRAN$/;"	v
+MPI_ORDER_FORTRAN	/usr/lib/openmpi/include/mpi.h	313;"	d
+MPI_Offset	/usr/lib/openmpi/include/mpi.h	/^typedef OMPI_MPI_OFFSET_TYPE MPI_Offset;$/;"	t
+MPI_Op	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_op_t *MPI_Op;$/;"	t	typeref:struct:ompi_op_t
+MPI_Op_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Op_c2f(MPI_Op op); $/;"	p
+MPI_Op_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Op_create(MPI_User_function *function, int commute, MPI_Op *op);$/;"	p
+MPI_Op_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Op MPI_Op_f2c(MPI_Fint op);$/;"	p
+MPI_Op_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Op_free(MPI_Op *op);$/;"	p
+MPI_Open_port	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Open_port(MPI_Info info, char *port_name);$/;"	p
+MPI_PACKED	/usr/lib/openmpi/include/mpi.h	758;"	d
+MPI_PACKED	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BYTE, MPI_PACKED, MPI_UB, MPI_LB$/;"	v
+MPI_PROC_NULL	/usr/lib/openmpi/include/mpi.h	288;"	d
+MPI_PROC_NULL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_PROC_NULL, MPI_MAX_PROCESSOR_NAME$/;"	v
+MPI_PROD	/usr/lib/openmpi/include/mpi.h	744;"	d
+MPI_PROD	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND$/;"	v
+MPI_Pack	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Pack(void *inbuf, int incount, MPI_Datatype datatype, $/;"	p
+MPI_Pack_external	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Pack_external(char *datarep, void *inbuf, int incount,$/;"	p
+MPI_Pack_external_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Pack_external_size(char *datarep, int incount, $/;"	p
+MPI_Pack_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Pack_size(int incount, MPI_Datatype datatype, MPI_Comm comm, $/;"	p
+MPI_Pcontrol	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Pcontrol(const int level, ...);$/;"	p
+MPI_Probe	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Probe(int source, int tag, MPI_Comm comm, MPI_Status *status);$/;"	p
+MPI_Publish_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Publish_name(char *service_name, MPI_Info info, $/;"	p
+MPI_Put	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Put(void *origin_addr, int origin_count, MPI_Datatype origin_datatype, $/;"	p
+MPI_Query_thread	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Query_thread(int *provided);$/;"	p
+MPI_REAL	/usr/lib/openmpi/include/mpi.h	819;"	d
+MPI_REAL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_REAL, MPI_REAL2, MPI_REAL4, MPI_REAL8, MPI_REAL16$/;"	v
+MPI_REAL16	/usr/lib/openmpi/include/mpi.h	827;"	d
+MPI_REAL2	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_REAL, MPI_REAL2, MPI_REAL4, MPI_REAL8, MPI_REAL16$/;"	v
+MPI_REAL4	/usr/lib/openmpi/include/mpi.h	821;"	d
+MPI_REAL4	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_REAL, MPI_REAL2, MPI_REAL4, MPI_REAL8, MPI_REAL16$/;"	v
+MPI_REAL8	/usr/lib/openmpi/include/mpi.h	824;"	d
+MPI_REAL8	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_REAL, MPI_REAL2, MPI_REAL4, MPI_REAL8, MPI_REAL16$/;"	v
+MPI_REPLACE	/usr/lib/openmpi/include/mpi.h	753;"	d
+MPI_REQUEST_NULL	/usr/lib/openmpi/include/mpi.h	502;"	d
+MPI_REQUEST_NULL	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_REQUEST_NULL, MPI_OP_NULL, MPI_ERRHANDLER_NULL$/;"	v
+MPI_ROOT	/usr/lib/openmpi/include/mpi.h	289;"	d
+MPI_Recv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Recv(void *buf, int count, MPI_Datatype datatype, int source, $/;"	p
+MPI_Recv_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Recv_init(void *buf, int count, MPI_Datatype datatype, int source,$/;"	p
+MPI_Reduce	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Reduce(void *sendbuf, void *recvbuf, int count, $/;"	p
+MPI_Reduce_scatter	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Reduce_scatter(void *sendbuf, void *recvbuf, int *recvcounts, $/;"	p
+MPI_Register_datarep	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Register_datarep(char *datarep, $/;"	p
+MPI_Request	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_request_t *MPI_Request;$/;"	t	typeref:struct:ompi_request_t
+MPI_Request_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Request_c2f(MPI_Request request);$/;"	p
+MPI_Request_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Request MPI_Request_f2c(MPI_Fint request);$/;"	p
+MPI_Request_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Request_free(MPI_Request *request);$/;"	p
+MPI_Request_get_status	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Request_get_status(MPI_Request request, int *flag, $/;"	p
+MPI_Rsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Rsend(void *ibuf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_Rsend_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Rsend_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+MPI_SEEK_CUR	/usr/lib/openmpi/include/mpi.h	338;"	d
+MPI_SEEK_CUR	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_SEEK_SET, MPI_SEEK_CUR, MPI_SEEK_END $/;"	v
+MPI_SEEK_END	/usr/lib/openmpi/include/mpi.h	339;"	d
+MPI_SEEK_SET	/usr/lib/openmpi/include/mpi.h	337;"	d
+MPI_SEEK_SET	/usr/lib/openmpi/include/mpif-mpi-io.h	/^      integer MPI_SEEK_SET, MPI_SEEK_CUR, MPI_SEEK_END $/;"	v
+MPI_SHORT	/usr/lib/openmpi/include/mpi.h	760;"	d
+MPI_SHORT_INT	/usr/lib/openmpi/include/mpi.h	775;"	d
+MPI_SIGNED_CHAR	/usr/lib/openmpi/include/mpi.h	767;"	d
+MPI_SIMILAR	/usr/lib/openmpi/include/mpi.h	/^  MPI_SIMILAR,$/;"	e	enum:__anon2
+MPI_SIMILAR	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_IDENT, MPI_CONGRUENT, MPI_SIMILAR, MPI_UNEQUAL$/;"	v
+MPI_SOURCE	/usr/lib/openmpi/include/mpi.h	/^  int MPI_SOURCE;$/;"	m	struct:ompi_status_public_t
+MPI_SOURCE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_SOURCE, MPI_TAG, MPI_ERROR$/;"	v
+MPI_STATUSES_IGNORE	/usr/lib/openmpi/include/mpi.h	512;"	d
+MPI_STATUS_IGNORE	/usr/lib/openmpi/include/mpi.h	511;"	d
+MPI_SUBVERSION	/usr/lib/openmpi/include/mpi.h	184;"	d
+MPI_SUCCESS	/usr/lib/openmpi/include/mpi.h	390;"	d
+MPI_SUM	/usr/lib/openmpi/include/mpi.h	743;"	d
+MPI_SUM	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND$/;"	v
+MPI_Scan	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Scan(void *sendbuf, void *recvbuf, int count, $/;"	p
+MPI_Scatter	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Scatter(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Scatterv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Scatterv(void *sendbuf, int *sendcounts, int *displs, $/;"	p
+MPI_Send	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Send(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_Send_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Send_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+MPI_Sendrecv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Sendrecv(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+MPI_Sendrecv_replace	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Sendrecv_replace(void * buf, int count, MPI_Datatype datatype, $/;"	p
+MPI_Ssend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Ssend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+MPI_Ssend_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Ssend_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+MPI_Start	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Start(MPI_Request *request);$/;"	p
+MPI_Startall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Startall(int count, MPI_Request *array_of_requests);$/;"	p
+MPI_Status	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_status_public_t MPI_Status;$/;"	t	typeref:struct:ompi_status_public_t
+MPI_Status_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Status_c2f(MPI_Status *c_status, MPI_Fint *f_status);$/;"	p
+MPI_Status_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Status_f2c(MPI_Fint *f_status, MPI_Status *c_status);$/;"	p
+MPI_Status_set_cancelled	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Status_set_cancelled(MPI_Status *status, int flag);$/;"	p
+MPI_Status_set_elements	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Status_set_elements(MPI_Status *status, MPI_Datatype datatype,$/;"	p
+MPI_TAG	/usr/lib/openmpi/include/mpi.h	/^  int MPI_TAG;$/;"	m	struct:ompi_status_public_t
+MPI_TAG	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_SOURCE, MPI_TAG, MPI_ERROR$/;"	v
+MPI_TAG_UB	/usr/lib/openmpi/include/mpi.h	/^    MPI_TAG_UB,$/;"	e	enum:__anon1
+MPI_TAG_UB	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_TAG_UB, MPI_HOST, MPI_IO, MPI_WTIME_IS_GLOBAL$/;"	v
+MPI_THREAD_FUNNELED	/usr/lib/openmpi/include/mpi.h	/^  MPI_THREAD_FUNNELED,$/;"	e	enum:__anon3
+MPI_THREAD_MULTIPLE	/usr/lib/openmpi/include/mpi.h	/^  MPI_THREAD_MULTIPLE$/;"	e	enum:__anon3
+MPI_THREAD_SERIALIZED	/usr/lib/openmpi/include/mpi.h	/^  MPI_THREAD_SERIALIZED,$/;"	e	enum:__anon3
+MPI_THREAD_SERIALIZED	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_THREAD_SERIALIZED, MPI_THREAD_MULTIPLE$/;"	v
+MPI_THREAD_SINGLE	/usr/lib/openmpi/include/mpi.h	/^  MPI_THREAD_SINGLE,$/;"	e	enum:__anon3
+MPI_THREAD_SINGLE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_THREAD_SINGLE, MPI_THREAD_FUNNELED$/;"	v
+MPI_TYPECLASS_COMPLEX	/usr/lib/openmpi/include/mpi.h	851;"	d
+MPI_TYPECLASS_INTEGER	/usr/lib/openmpi/include/mpi.h	849;"	d
+MPI_TYPECLASS_INTEGER	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_TYPECLASS_INTEGER, MPI_TYPECLASS_REAL$/;"	v
+MPI_TYPECLASS_REAL	/usr/lib/openmpi/include/mpi.h	850;"	d
+MPI_TYPE_DUP_FN	/usr/lib/openmpi/include/mpi.h	537;"	d
+MPI_TYPE_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	536;"	d
+MPI_TYPE_NULL_COPY_FN	/usr/lib/openmpi/include/mpif.h	/^      external MPI_TYPE_NULL_COPY_FN, MPI_TYPE_NULL_DELETE_FN$/;"	v
+MPI_TYPE_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	535;"	d
+MPI_Test	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Test(MPI_Request *request, int *flag, MPI_Status *status);$/;"	p
+MPI_Test_cancelled	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Test_cancelled(MPI_Status *status, int *flag);$/;"	p
+MPI_Testall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Testall(int count, MPI_Request array_of_requests[], int *flag, $/;"	p
+MPI_Testany	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Testany(int count, MPI_Request array_of_requests[], int *index, $/;"	p
+MPI_Testsome	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Testsome(int incount, MPI_Request array_of_requests[], $/;"	p
+MPI_Topo_test	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Topo_test(MPI_Comm comm, int *status);$/;"	p
+MPI_Type_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Type_c2f(MPI_Datatype datatype);$/;"	p
+MPI_Type_commit	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_commit(MPI_Datatype *type);$/;"	p
+MPI_Type_contiguous	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_contiguous(int count, MPI_Datatype oldtype, $/;"	p
+MPI_Type_copy_attr_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Type_copy_attr_function)(MPI_Datatype, int, void *,$/;"	t
+MPI_Type_create_darray	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_darray(int size, int rank, int ndims, $/;"	p
+MPI_Type_create_f90_complex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_f90_complex(int p, int r, MPI_Datatype *newtype);$/;"	p
+MPI_Type_create_f90_integer	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_f90_integer(int r, MPI_Datatype *newtype);$/;"	p
+MPI_Type_create_f90_real	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_f90_real(int p, int r, MPI_Datatype *newtype);$/;"	p
+MPI_Type_create_hindexed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_hindexed(int count, int array_of_blocklengths[], $/;"	p
+MPI_Type_create_hvector	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_hvector(int count, int blocklength, MPI_Aint stride, $/;"	p
+MPI_Type_create_indexed_block	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_indexed_block(int count, int blocklength,$/;"	p
+MPI_Type_create_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_keyval(MPI_Type_copy_attr_function *type_copy_attr_fn, $/;"	p
+MPI_Type_create_resized	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_resized(MPI_Datatype oldtype, MPI_Aint lb, $/;"	p
+MPI_Type_create_struct	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_struct(int count, int array_of_block_lengths[], $/;"	p
+MPI_Type_create_subarray	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_create_subarray(int ndims, int size_array[], int subsize_array[], $/;"	p
+MPI_Type_delete_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_delete_attr(MPI_Datatype type, int type_keyval);$/;"	p
+MPI_Type_delete_attr_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Type_delete_attr_function)(MPI_Datatype, int,$/;"	t
+MPI_Type_dup	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_dup(MPI_Datatype type, MPI_Datatype *newtype);$/;"	p
+MPI_Type_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_extent(MPI_Datatype type, MPI_Aint *extent);$/;"	p
+MPI_Type_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Datatype MPI_Type_f2c(MPI_Fint datatype);$/;"	p
+MPI_Type_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_free(MPI_Datatype *type);$/;"	p
+MPI_Type_free_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_free_keyval(int *type_keyval);$/;"	p
+MPI_Type_get_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_get_attr(MPI_Datatype type, int type_keyval, $/;"	p
+MPI_Type_get_contents	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_get_contents(MPI_Datatype mtype, int max_integers, $/;"	p
+MPI_Type_get_envelope	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_get_envelope(MPI_Datatype type, int *num_integers, $/;"	p
+MPI_Type_get_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_get_extent(MPI_Datatype type, MPI_Aint *lb, $/;"	p
+MPI_Type_get_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_get_name(MPI_Datatype type, char *type_name, $/;"	p
+MPI_Type_get_true_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_get_true_extent(MPI_Datatype datatype, MPI_Aint *true_lb, $/;"	p
+MPI_Type_hindexed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_hindexed(int count, int array_of_blocklengths[], $/;"	p
+MPI_Type_hvector	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_hvector(int count, int blocklength, MPI_Aint stride, $/;"	p
+MPI_Type_indexed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_indexed(int count, int array_of_blocklengths[], $/;"	p
+MPI_Type_lb	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_lb(MPI_Datatype type, MPI_Aint *lb);$/;"	p
+MPI_Type_match_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_match_size(int typeclass, int size, MPI_Datatype *type);$/;"	p
+MPI_Type_set_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_set_attr(MPI_Datatype type, int type_keyval, $/;"	p
+MPI_Type_set_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_set_name(MPI_Datatype type, char *type_name);$/;"	p
+MPI_Type_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_size(MPI_Datatype type, int *size);$/;"	p
+MPI_Type_struct	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_struct(int count, int array_of_blocklengths[], $/;"	p
+MPI_Type_ub	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_ub(MPI_Datatype mtype, MPI_Aint *ub);$/;"	p
+MPI_Type_vector	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Type_vector(int count, int blocklength, int stride, $/;"	p
+MPI_UB	/usr/lib/openmpi/include/mpi.h	777;"	d
+MPI_UB	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_BYTE, MPI_PACKED, MPI_UB, MPI_LB$/;"	v
+MPI_UNDEFINED	/usr/lib/openmpi/include/mpi.h	294;"	d
+MPI_UNEQUAL	/usr/lib/openmpi/include/mpi.h	/^  MPI_UNEQUAL$/;"	e	enum:__anon2
+MPI_UNIVERSE_SIZE	/usr/lib/openmpi/include/mpi.h	/^    MPI_UNIVERSE_SIZE,$/;"	e	enum:__anon1
+MPI_UNSIGNED	/usr/lib/openmpi/include/mpi.h	770;"	d
+MPI_UNSIGNED_CHAR	/usr/lib/openmpi/include/mpi.h	766;"	d
+MPI_UNSIGNED_LONG	/usr/lib/openmpi/include/mpi.h	769;"	d
+MPI_UNSIGNED_LONG_LONG	/usr/lib/openmpi/include/mpi.h	783;"	d
+MPI_UNSIGNED_SHORT	/usr/lib/openmpi/include/mpi.h	768;"	d
+MPI_Unpack	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Unpack(void *inbuf, int insize, int *position, $/;"	p
+MPI_Unpack_external	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Unpack_external (char *datarep, void *inbuf, MPI_Aint insize,$/;"	p
+MPI_Unpublish_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Unpublish_name(char *service_name, MPI_Info info, char *port_name);$/;"	p
+MPI_User_function	/usr/lib/openmpi/include/mpi.h	/^typedef void (MPI_User_function)(void *, void *, int *, MPI_Datatype *);$/;"	t
+MPI_VERSION	/usr/lib/openmpi/include/mpi.h	183;"	d
+MPI_WCHAR	/usr/lib/openmpi/include/mpi.h	779;"	d
+MPI_WIN_BASE	/usr/lib/openmpi/include/mpi.h	/^    MPI_WIN_BASE,$/;"	e	enum:__anon1
+MPI_WIN_BASE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_WIN_BASE, MPI_WIN_SIZE, MPI_WIN_DISP_UNIT$/;"	v
+MPI_WIN_DISP_UNIT	/usr/lib/openmpi/include/mpi.h	/^    MPI_WIN_DISP_UNIT,$/;"	e	enum:__anon1
+MPI_WIN_DUP_FN	/usr/lib/openmpi/include/mpi.h	545;"	d
+MPI_WIN_NULL	/usr/lib/openmpi/include/mpi.h	506;"	d
+MPI_WIN_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	544;"	d
+MPI_WIN_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	543;"	d
+MPI_WIN_SIZE	/usr/lib/openmpi/include/mpi.h	/^    MPI_WIN_SIZE,$/;"	e	enum:__anon1
+MPI_WIN_SIZE	/usr/lib/openmpi/include/mpif-common.h	/^      integer MPI_WIN_BASE, MPI_WIN_SIZE, MPI_WIN_DISP_UNIT$/;"	v
+MPI_WTICK	/usr/lib/openmpi/include/mpif.h	/^      double precision MPI_WTIME, MPI_WTICK , PMPI_WTICK, PMPI_WTIME$/;"	v
+MPI_WTICK	/usr/lib/openmpi/include/mpif.h	/^      external MPI_WTIME, MPI_WTICK , PMPI_WTICK, PMPI_WTIME$/;"	v
+MPI_WTIME	/usr/lib/openmpi/include/mpif.h	/^      double precision MPI_WTIME, MPI_WTICK , PMPI_WTICK, PMPI_WTIME$/;"	v
+MPI_WTIME_IS_GLOBAL	/usr/lib/openmpi/include/mpi.h	/^    MPI_WTIME_IS_GLOBAL,$/;"	e	enum:__anon1
+MPI_Wait	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Wait(MPI_Request *request, MPI_Status *status);$/;"	p
+MPI_Waitall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Waitall(int count, MPI_Request *array_of_requests, $/;"	p
+MPI_Waitany	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Waitany(int count, MPI_Request *array_of_requests, $/;"	p
+MPI_Waitsome	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Waitsome(int incount, MPI_Request *array_of_requests, $/;"	p
+MPI_Win	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_win_t *MPI_Win;$/;"	t	typeref:struct:ompi_win_t
+MPI_Win_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint MPI_Win_c2f(MPI_Win win);$/;"	p
+MPI_Win_call_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_call_errhandler(MPI_Win win, int errorcode);$/;"	p
+MPI_Win_complete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_complete(MPI_Win win);$/;"	p
+MPI_Win_copy_attr_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Win_copy_attr_function)(MPI_Win, int, void *,$/;"	t
+MPI_Win_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_create(void *base, MPI_Aint size, int disp_unit, $/;"	p
+MPI_Win_create_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_create_errhandler(MPI_Win_errhandler_fn *function, $/;"	p
+MPI_Win_create_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_create_keyval(MPI_Win_copy_attr_function *win_copy_attr_fn, $/;"	p
+MPI_Win_delete_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_delete_attr(MPI_Win win, int win_keyval);$/;"	p
+MPI_Win_delete_attr_function	/usr/lib/openmpi/include/mpi.h	/^typedef int (MPI_Win_delete_attr_function)(MPI_Win, int, void *, void *);$/;"	t
+MPI_Win_errhandler_fn	/usr/lib/openmpi/include/mpi.h	/^typedef void (MPI_Win_errhandler_fn)(MPI_Win *, int *, ...);$/;"	t
+MPI_Win_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Win MPI_Win_f2c(MPI_Fint win);$/;"	p
+MPI_Win_fence	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_fence(int assert, MPI_Win win);$/;"	p
+MPI_Win_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_free(MPI_Win *win);$/;"	p
+MPI_Win_free_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_free_keyval(int *win_keyval);$/;"	p
+MPI_Win_get_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_get_attr(MPI_Win win, int win_keyval, $/;"	p
+MPI_Win_get_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_get_errhandler(MPI_Win win, MPI_Errhandler *errhandler);$/;"	p
+MPI_Win_get_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_get_group(MPI_Win win, MPI_Group *group);$/;"	p
+MPI_Win_get_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_get_name(MPI_Win win, char *win_name, int *resultlen);$/;"	p
+MPI_Win_lock	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_lock(int lock_type, int rank, int assert, MPI_Win win);$/;"	p
+MPI_Win_post	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_post(MPI_Group group, int assert, MPI_Win win);$/;"	p
+MPI_Win_set_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_set_attr(MPI_Win win, int win_keyval, void *attribute_val);$/;"	p
+MPI_Win_set_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_set_errhandler(MPI_Win win, MPI_Errhandler errhandler);$/;"	p
+MPI_Win_set_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_set_name(MPI_Win win, char *win_name);$/;"	p
+MPI_Win_start	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_start(MPI_Group group, int assert, MPI_Win win);$/;"	p
+MPI_Win_test	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_test(MPI_Win win, int *flag);$/;"	p
+MPI_Win_unlock	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_unlock(int rank, MPI_Win win);$/;"	p
+MPI_Win_wait	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int MPI_Win_wait(MPI_Win win);$/;"	p
+MPI_Wtick	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  double MPI_Wtick(void);$/;"	p
+MPI_Wtime	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  double MPI_Wtime(void);$/;"	p
+OMPI_BUILDING	/usr/lib/openmpi/include/mpi.h	171;"	d
+OMPI_CXX_SUPPORTS_2D_CONST_CAST	/usr/lib/openmpi/include/mpi.h	108;"	d
+OMPI_C_HAVE_VISIBILITY	/usr/lib/openmpi/include/mpi.h	135;"	d
+OMPI_C_MPI_COMM_DUP_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_COMM_DUP_FN( MPI_Comm comm, int comm_keyval, $/;"	p
+OMPI_C_MPI_COMM_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_COMM_NULL_COPY_FN( MPI_Comm comm, $/;"	p
+OMPI_C_MPI_COMM_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_COMM_NULL_DELETE_FN( MPI_Comm comm, $/;"	p
+OMPI_C_MPI_DUP_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_DUP_FN( MPI_Comm comm, int comm_keyval, $/;"	p
+OMPI_C_MPI_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_NULL_COPY_FN( MPI_Comm comm, int comm_keyval, $/;"	p
+OMPI_C_MPI_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_NULL_DELETE_FN( MPI_Comm comm, int comm_keyval,$/;"	p
+OMPI_C_MPI_TYPE_DUP_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_TYPE_DUP_FN( MPI_Datatype datatype, $/;"	p
+OMPI_C_MPI_TYPE_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_TYPE_NULL_COPY_FN( MPI_Datatype datatype, $/;"	p
+OMPI_C_MPI_TYPE_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_TYPE_NULL_DELETE_FN( MPI_Datatype datatype, $/;"	p
+OMPI_C_MPI_WIN_DUP_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_WIN_DUP_FN( MPI_Win window, int win_keyval, $/;"	p
+OMPI_C_MPI_WIN_NULL_COPY_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_WIN_NULL_COPY_FN( MPI_Win window, int win_keyval, $/;"	p
+OMPI_C_MPI_WIN_NULL_DELETE_FN	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC int OMPI_C_MPI_WIN_NULL_DELETE_FN( MPI_Win window, $/;"	p
+OMPI_DECLSPEC	/usr/lib/openmpi/include/mpi.h	143;"	d
+OMPI_DECLSPEC	/usr/lib/openmpi/include/mpi.h	145;"	d
+OMPI_DECLSPEC	/usr/lib/openmpi/include/mpi.h	149;"	d
+OMPI_DECLSPEC	/usr/lib/openmpi/include/mpi.h	151;"	d
+OMPI_HAVE_CXX_EXCEPTION_SUPPORT	/usr/lib/openmpi/include/mpi.h	117;"	d
+OMPI_HAVE_FORTRAN_INTEGER1	/usr/lib/openmpi/include/mpi.h	69;"	d
+OMPI_HAVE_FORTRAN_INTEGER16	/usr/lib/openmpi/include/mpi.h	72;"	d
+OMPI_HAVE_FORTRAN_INTEGER2	/usr/lib/openmpi/include/mpi.h	75;"	d
+OMPI_HAVE_FORTRAN_INTEGER4	/usr/lib/openmpi/include/mpi.h	78;"	d
+OMPI_HAVE_FORTRAN_INTEGER8	/usr/lib/openmpi/include/mpi.h	81;"	d
+OMPI_HAVE_FORTRAN_LOGICAL1	/usr/lib/openmpi/include/mpi.h	57;"	d
+OMPI_HAVE_FORTRAN_LOGICAL2	/usr/lib/openmpi/include/mpi.h	60;"	d
+OMPI_HAVE_FORTRAN_LOGICAL4	/usr/lib/openmpi/include/mpi.h	63;"	d
+OMPI_HAVE_FORTRAN_LOGICAL8	/usr/lib/openmpi/include/mpi.h	66;"	d
+OMPI_HAVE_FORTRAN_REAL16	/usr/lib/openmpi/include/mpi.h	84;"	d
+OMPI_HAVE_FORTRAN_REAL2	/usr/lib/openmpi/include/mpi.h	87;"	d
+OMPI_HAVE_FORTRAN_REAL4	/usr/lib/openmpi/include/mpi.h	90;"	d
+OMPI_HAVE_FORTRAN_REAL8	/usr/lib/openmpi/include/mpi.h	93;"	d
+OMPI_HAVE_LONG_LONG	/usr/lib/openmpi/include/mpi.h	48;"	d
+OMPI_HAVE_SYS_TIME_H	/usr/lib/openmpi/include/mpi.h	42;"	d
+OMPI_MAJOR_VERSION	/usr/lib/openmpi/include/mpi.h	123;"	d
+OMPI_MINOR_VERSION	/usr/lib/openmpi/include/mpi.h	124;"	d
+OMPI_MPI_H	/usr/lib/openmpi/include/mpi.h	23;"	d
+OMPI_MPI_OFFSET_TYPE	/usr/lib/openmpi/include/mpi.h	96;"	d
+OMPI_OFFSET_DATATYPE	/usr/lib/openmpi/include/mpi.h	120;"	d
+OMPI_PREDEFINED_GLOBAL	/usr/lib/openmpi/include/mpi.h	207;"	d
+OMPI_PREDEFINED_GLOBAL	/usr/lib/openmpi/include/mpi.h	209;"	d
+OMPI_PROVIDE_MPI_FILE_INTERFACE	/usr/lib/openmpi/include/mpi.h	138;"	d
+OMPI_PTRDIFF_TYPE	/usr/lib/openmpi/include/mpi.h	99;"	d
+OMPI_RELEASE_VERSION	/usr/lib/openmpi/include/mpi.h	125;"	d
+OMPI_SIZEOF_BOOL	/usr/lib/openmpi/include/mpi.h	51;"	d
+OMPI_SIZEOF_INT	/usr/lib/openmpi/include/mpi.h	54;"	d
+OMPI_STDC_HEADERS	/usr/lib/openmpi/include/mpi.h	39;"	d
+OMPI_WANT_CXX_BINDINGS	/usr/lib/openmpi/include/mpi.h	102;"	d
+OMPI_WANT_F77_BINDINGS	/usr/lib/openmpi/include/mpi.h	111;"	d
+OMPI_WANT_F90_BINDINGS	/usr/lib/openmpi/include/mpi.h	114;"	d
+OMPI_WANT_MPI_CXX_SEEK	/usr/lib/openmpi/include/mpi.h	105;"	d
+OPEN_MPI	/usr/lib/openmpi/include/mpi.h	178;"	d
+PMPI_Abort	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Abort(MPI_Comm comm, int errorcode);$/;"	p
+PMPI_Accumulate	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Accumulate(void *origin_addr, int origin_count, MPI_Datatype origin_datatype,$/;"	p
+PMPI_Add_error_class	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Add_error_class(int *errorclass);$/;"	p
+PMPI_Add_error_code	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Add_error_code(int errorclass, int *errorcode);$/;"	p
+PMPI_Add_error_string	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Add_error_string(int errorcode, char *string);$/;"	p
+PMPI_Address	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Address(void *location, MPI_Aint *address);$/;"	p
+PMPI_Allgather	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Allgather(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Allgatherv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Allgatherv(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Alloc_mem	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Alloc_mem(MPI_Aint size, MPI_Info info, $/;"	p
+PMPI_Allreduce	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Allreduce(void *sendbuf, void *recvbuf, int count, $/;"	p
+PMPI_Alltoall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Alltoall(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Alltoallv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Alltoallv(void *sendbuf, int *sendcounts, int *sdispls, $/;"	p
+PMPI_Alltoallw	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Alltoallw(void *sendbuf, int *sendcounts, int *sdispls, MPI_Datatype *sendtypes, $/;"	p
+PMPI_Attr_delete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Attr_delete(MPI_Comm comm, int keyval);$/;"	p
+PMPI_Attr_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Attr_get(MPI_Comm comm, int keyval, void *attribute_val, int *flag);$/;"	p
+PMPI_Attr_put	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Attr_put(MPI_Comm comm, int keyval, void *attribute_val);$/;"	p
+PMPI_Barrier	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Barrier(MPI_Comm comm);$/;"	p
+PMPI_Bcast	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Bcast(void *buffer, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Bsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Bsend(void *buf, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Bsend_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Bsend_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Buffer_attach	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Buffer_attach(void *buffer, int size);$/;"	p
+PMPI_Buffer_detach	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Buffer_detach(void *buffer, int *size);$/;"	p
+PMPI_Cancel	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cancel(MPI_Request *request);$/;"	p
+PMPI_Cart_coords	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_coords(MPI_Comm comm, int rank, int maxdims, int *coords);$/;"	p
+PMPI_Cart_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_create(MPI_Comm old_comm, int ndims, int *dims, $/;"	p
+PMPI_Cart_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_get(MPI_Comm comm, int maxdims, int *dims, $/;"	p
+PMPI_Cart_map	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_map(MPI_Comm comm, int ndims, int *dims, $/;"	p
+PMPI_Cart_rank	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_rank(MPI_Comm comm, int *coords, int *rank);$/;"	p
+PMPI_Cart_shift	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_shift(MPI_Comm comm, int direction, int disp, $/;"	p
+PMPI_Cart_sub	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cart_sub(MPI_Comm comm, int *remain_dims, MPI_Comm *new_comm);$/;"	p
+PMPI_Cartdim_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Cartdim_get(MPI_Comm comm, int *ndims);$/;"	p
+PMPI_Close_port	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Close_port(char *port_name);$/;"	p
+PMPI_Comm_accept	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_accept(char *port_name, MPI_Info info, int root, $/;"	p
+PMPI_Comm_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Comm_c2f(MPI_Comm comm);$/;"	p
+PMPI_Comm_call_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_call_errhandler(MPI_Comm comm, int errorcode);$/;"	p
+PMPI_Comm_compare	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_compare(MPI_Comm comm1, MPI_Comm comm2, int *result);$/;"	p
+PMPI_Comm_connect	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_connect(char *port_name, MPI_Info info, int root, $/;"	p
+PMPI_Comm_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_create(MPI_Comm comm, MPI_Group group, MPI_Comm *newcomm);$/;"	p
+PMPI_Comm_create_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_create_errhandler(MPI_Comm_errhandler_fn *function, $/;"	p
+PMPI_Comm_create_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_create_keyval(MPI_Comm_copy_attr_function *comm_copy_attr_fn, $/;"	p
+PMPI_Comm_delete_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_delete_attr(MPI_Comm comm, int comm_keyval);$/;"	p
+PMPI_Comm_disconnect	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_disconnect(MPI_Comm *comm);$/;"	p
+PMPI_Comm_dup	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_dup(MPI_Comm comm, MPI_Comm *newcomm);$/;"	p
+PMPI_Comm_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Comm PMPI_Comm_f2c(MPI_Fint comm);$/;"	p
+PMPI_Comm_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_free(MPI_Comm *comm);$/;"	p
+PMPI_Comm_free_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_free_keyval(int *comm_keyval);$/;"	p
+PMPI_Comm_get_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_get_attr(MPI_Comm comm, int comm_keyval, $/;"	p
+PMPI_Comm_get_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_get_errhandler(MPI_Comm comm, MPI_Errhandler *erhandler);$/;"	p
+PMPI_Comm_get_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_get_name(MPI_Comm comm, char *comm_name, int *resultlen);$/;"	p
+PMPI_Comm_get_parent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_get_parent(MPI_Comm *parent);$/;"	p
+PMPI_Comm_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_group(MPI_Comm comm, MPI_Group *group);$/;"	p
+PMPI_Comm_join	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_join(int fd, MPI_Comm *intercomm);$/;"	p
+PMPI_Comm_rank	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_rank(MPI_Comm comm, int *rank);$/;"	p
+PMPI_Comm_remote_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_remote_group(MPI_Comm comm, MPI_Group *group);$/;"	p
+PMPI_Comm_remote_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_remote_size(MPI_Comm comm, int *size);$/;"	p
+PMPI_Comm_set_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_set_attr(MPI_Comm comm, int comm_keyval, void *attribute_val);$/;"	p
+PMPI_Comm_set_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_set_errhandler(MPI_Comm comm, MPI_Errhandler errhandler);$/;"	p
+PMPI_Comm_set_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_set_name(MPI_Comm comm, char *comm_name);$/;"	p
+PMPI_Comm_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_size(MPI_Comm comm, int *size);$/;"	p
+PMPI_Comm_spawn	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_spawn(char *command, char **argv, int maxprocs, MPI_Info info, $/;"	p
+PMPI_Comm_spawn_multiple	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_spawn_multiple(int count, char **array_of_commands, char ***array_of_argv, $/;"	p
+PMPI_Comm_split	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_split(MPI_Comm comm, int color, int key, MPI_Comm *newcomm);$/;"	p
+PMPI_Comm_test_inter	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Comm_test_inter(MPI_Comm comm, int *flag);$/;"	p
+PMPI_Dims_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Dims_create(int nnodes, int ndims, int *dims);$/;"	p
+PMPI_Errhandler_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Errhandler_c2f(MPI_Errhandler errhandler);$/;"	p
+PMPI_Errhandler_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Errhandler_create(MPI_Handler_function *function,$/;"	p
+PMPI_Errhandler_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Errhandler PMPI_Errhandler_f2c(MPI_Fint errhandler);$/;"	p
+PMPI_Errhandler_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Errhandler_free(MPI_Errhandler *errhandler);$/;"	p
+PMPI_Errhandler_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Errhandler_get(MPI_Comm comm, MPI_Errhandler *errhandler);$/;"	p
+PMPI_Errhandler_set	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Errhandler_set(MPI_Comm comm, MPI_Errhandler errhandler);$/;"	p
+PMPI_Error_class	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Error_class(int errorcode, int *errorclass);$/;"	p
+PMPI_Error_string	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Error_string(int errorcode, char *string, int *resultlen);$/;"	p
+PMPI_Exscan	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Exscan(void *sendbuf, void *recvbuf, int count,$/;"	p
+PMPI_File_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_File_c2f(MPI_File file);$/;"	p
+PMPI_File_call_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_call_errhandler(MPI_File fh, int errorcode);$/;"	p
+PMPI_File_close	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_close(MPI_File *fh);$/;"	p
+PMPI_File_create_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_create_errhandler(MPI_File_errhandler_fn *function,$/;"	p
+PMPI_File_delete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_delete(char *filename, MPI_Info info);$/;"	p
+PMPI_File_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_File PMPI_File_f2c(MPI_Fint file);$/;"	p
+PMPI_File_get_amode	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_amode(MPI_File fh, int *amode);$/;"	p
+PMPI_File_get_atomicity	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_atomicity(MPI_File fh, int *flag);$/;"	p
+PMPI_File_get_byte_offset	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_byte_offset(MPI_File fh, MPI_Offset offset,$/;"	p
+PMPI_File_get_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_errhandler( MPI_File file, MPI_Errhandler *errhandler);$/;"	p
+PMPI_File_get_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_group(MPI_File fh, MPI_Group *group);$/;"	p
+PMPI_File_get_info	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_info(MPI_File fh, MPI_Info *info_used);$/;"	p
+PMPI_File_get_position	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_position(MPI_File fh, MPI_Offset *offset);$/;"	p
+PMPI_File_get_position_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_position_shared(MPI_File fh, MPI_Offset *offset);$/;"	p
+PMPI_File_get_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_size(MPI_File fh, MPI_Offset *size);$/;"	p
+PMPI_File_get_type_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_type_extent(MPI_File fh, MPI_Datatype datatype,$/;"	p
+PMPI_File_get_view	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_get_view(MPI_File fh, MPI_Offset *disp,$/;"	p
+PMPI_File_iread	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_iread(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_iread_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_iread_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_iread_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_iread_shared(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_iwrite	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_iwrite(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_iwrite_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_iwrite_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_iwrite_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_iwrite_shared(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_open	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_open(MPI_Comm comm, char *filename, int amode,$/;"	p
+PMPI_File_preallocate	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_preallocate(MPI_File fh, MPI_Offset size);$/;"	p
+PMPI_File_read	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_read_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_all(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_read_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_all_begin(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_read_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+PMPI_File_read_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_read_at_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_at_all(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_read_at_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_at_all_begin(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_read_at_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_at_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+PMPI_File_read_ordered	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_ordered(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_read_ordered_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_ordered_begin(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_read_ordered_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_ordered_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+PMPI_File_read_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_read_shared(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_seek	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_seek(MPI_File fh, MPI_Offset offset, int whence);$/;"	p
+PMPI_File_seek_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_seek_shared(MPI_File fh, MPI_Offset offset, int whence);$/;"	p
+PMPI_File_set_atomicity	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_set_atomicity(MPI_File fh, int flag);$/;"	p
+PMPI_File_set_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_set_errhandler( MPI_File file, MPI_Errhandler errhandler);$/;"	p
+PMPI_File_set_info	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_set_info(MPI_File fh, MPI_Info info);$/;"	p
+PMPI_File_set_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_set_size(MPI_File fh, MPI_Offset size);$/;"	p
+PMPI_File_set_view	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_set_view(MPI_File fh, MPI_Offset disp, MPI_Datatype etype,$/;"	p
+PMPI_File_sync	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_sync(MPI_File fh);$/;"	p
+PMPI_File_write	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_write_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_all(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_write_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_all_begin(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_write_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+PMPI_File_write_at	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_at(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_write_at_all	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_at_all(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_write_at_all_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_at_all_begin(MPI_File fh, MPI_Offset offset, void *buf,$/;"	p
+PMPI_File_write_at_all_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_at_all_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+PMPI_File_write_ordered	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_ordered(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_write_ordered_begin	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_ordered_begin(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_File_write_ordered_end	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_ordered_end(MPI_File fh, void *buf, MPI_Status *status);$/;"	p
+PMPI_File_write_shared	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_File_write_shared(MPI_File fh, void *buf, int count,$/;"	p
+PMPI_Finalize	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Finalize(void);$/;"	p
+PMPI_Finalized	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Finalized(int *flag);$/;"	p
+PMPI_Free_mem	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Free_mem(void *base);$/;"	p
+PMPI_Gather	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Gather(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Gatherv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Gatherv(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Get(void *origin_addr, int origin_count, $/;"	p
+PMPI_Get_address	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Get_address(void *location, MPI_Aint *address);$/;"	p
+PMPI_Get_count	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Get_count(MPI_Status *status, MPI_Datatype datatype, int *count);$/;"	p
+PMPI_Get_elements	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Get_elements(MPI_Status *status, MPI_Datatype datatype, $/;"	p
+PMPI_Get_processor_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Get_processor_name(char *name, int *resultlen);$/;"	p
+PMPI_Get_version	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Get_version(int *version, int *subversion);$/;"	p
+PMPI_Graph_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Graph_create(MPI_Comm comm_old, int nnodes, int *index, $/;"	p
+PMPI_Graph_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Graph_get(MPI_Comm comm, int maxindex, int maxedges, $/;"	p
+PMPI_Graph_map	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Graph_map(MPI_Comm comm, int nnodes, int *index, int *edges, $/;"	p
+PMPI_Graph_neighbors	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Graph_neighbors(MPI_Comm comm, int rank, int maxneighbors, $/;"	p
+PMPI_Graph_neighbors_count	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Graph_neighbors_count(MPI_Comm comm, int rank, int *nneighbors);$/;"	p
+PMPI_Graphdims_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Graphdims_get(MPI_Comm comm, int *nnodes, int *nedges);$/;"	p
+PMPI_Grequest_complete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Grequest_complete(MPI_Request request);$/;"	p
+PMPI_Grequest_start	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Grequest_start(MPI_Grequest_query_function *query_fn,$/;"	p
+PMPI_Group_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Group_c2f(MPI_Group group);$/;"	p
+PMPI_Group_compare	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_compare(MPI_Group group1, MPI_Group group2, int *result);$/;"	p
+PMPI_Group_difference	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_difference(MPI_Group group1, MPI_Group group2, $/;"	p
+PMPI_Group_excl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_excl(MPI_Group group, int n, int *ranks, $/;"	p
+PMPI_Group_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Group PMPI_Group_f2c(MPI_Fint group);$/;"	p
+PMPI_Group_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_free(MPI_Group *group);$/;"	p
+PMPI_Group_incl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_incl(MPI_Group group, int n, int *ranks, $/;"	p
+PMPI_Group_intersection	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_intersection(MPI_Group group1, MPI_Group group2, $/;"	p
+PMPI_Group_range_excl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_range_excl(MPI_Group group, int n, int ranges[][3], $/;"	p
+PMPI_Group_range_incl	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_range_incl(MPI_Group group, int n, int ranges[][3], $/;"	p
+PMPI_Group_rank	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_rank(MPI_Group group, int *rank);$/;"	p
+PMPI_Group_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_size(MPI_Group group, int *size);$/;"	p
+PMPI_Group_translate_ranks	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_translate_ranks(MPI_Group group1, int n, int *ranks1, $/;"	p
+PMPI_Group_union	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Group_union(MPI_Group group1, MPI_Group group2, $/;"	p
+PMPI_Ibsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Ibsend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Info_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Info_c2f(MPI_Info info);$/;"	p
+PMPI_Info_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_create(MPI_Info *info);$/;"	p
+PMPI_Info_delete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_delete(MPI_Info info, char *key);$/;"	p
+PMPI_Info_dup	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_dup(MPI_Info info, MPI_Info *newinfo);$/;"	p
+PMPI_Info_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Info PMPI_Info_f2c(MPI_Fint info);$/;"	p
+PMPI_Info_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_free(MPI_Info *info);$/;"	p
+PMPI_Info_get	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_get(MPI_Info info, char *key, int valuelen, $/;"	p
+PMPI_Info_get_nkeys	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_get_nkeys(MPI_Info info, int *nkeys);$/;"	p
+PMPI_Info_get_nthkey	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_get_nthkey(MPI_Info info, int n, char *key);$/;"	p
+PMPI_Info_get_valuelen	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_get_valuelen(MPI_Info info, char *key, int *valuelen, $/;"	p
+PMPI_Info_set	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Info_set(MPI_Info info, char *key, char *value);$/;"	p
+PMPI_Init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Init(int *argc, char ***argv);$/;"	p
+PMPI_Init_thread	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Init_thread(int *argc, char ***argv, int required, $/;"	p
+PMPI_Initialized	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Initialized(int *flag);$/;"	p
+PMPI_Intercomm_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Intercomm_create(MPI_Comm local_comm, int local_leader, $/;"	p
+PMPI_Intercomm_merge	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Intercomm_merge(MPI_Comm intercomm, int high, $/;"	p
+PMPI_Iprobe	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Iprobe(int source, int tag, MPI_Comm comm, int *flag, $/;"	p
+PMPI_Irecv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source, $/;"	p
+PMPI_Irsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Irsend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Is_thread_main	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Is_thread_main(int *flag);$/;"	p
+PMPI_Isend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Issend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Issend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Keyval_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Keyval_create(MPI_Copy_function *copy_fn, $/;"	p
+PMPI_Keyval_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Keyval_free(int *keyval);$/;"	p
+PMPI_Lookup_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Lookup_name(char *service_name, MPI_Info info, char *port_name);$/;"	p
+PMPI_Op_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Op_c2f(MPI_Op op); $/;"	p
+PMPI_Op_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Op_create(MPI_User_function *function, int commute, $/;"	p
+PMPI_Op_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Op PMPI_Op_f2c(MPI_Fint op);$/;"	p
+PMPI_Op_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Op_free(MPI_Op *op);$/;"	p
+PMPI_Open_port	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Open_port(MPI_Info info, char *port_name);$/;"	p
+PMPI_Pack	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Pack(void *inbuf, int incount, MPI_Datatype datatype, $/;"	p
+PMPI_Pack_external	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Pack_external(char *datarep, void *inbuf, int incount,$/;"	p
+PMPI_Pack_external_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Pack_external_size(char *datarep, int incount, $/;"	p
+PMPI_Pack_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Pack_size(int incount, MPI_Datatype datatype, MPI_Comm comm, $/;"	p
+PMPI_Pcontrol	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Pcontrol(const int level, ...);$/;"	p
+PMPI_Probe	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Probe(int source, int tag, MPI_Comm comm, MPI_Status *status);$/;"	p
+PMPI_Publish_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Publish_name(char *service_name, MPI_Info info, $/;"	p
+PMPI_Put	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Put(void *origin_addr, int origin_count, MPI_Datatype origin_datatype, $/;"	p
+PMPI_Query_thread	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Query_thread(int *provided);$/;"	p
+PMPI_Recv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Recv(void *buf, int count, MPI_Datatype datatype, int source, $/;"	p
+PMPI_Recv_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Recv_init(void *buf, int count, MPI_Datatype datatype, int source,$/;"	p
+PMPI_Reduce	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Reduce(void *sendbuf, void *recvbuf, int count, $/;"	p
+PMPI_Reduce_scatter	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Reduce_scatter(void *sendbuf, void *recvbuf, int *recvcounts, $/;"	p
+PMPI_Register_datarep	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Register_datarep(char *datarep, $/;"	p
+PMPI_Request_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Request_c2f(MPI_Request request);$/;"	p
+PMPI_Request_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Request PMPI_Request_f2c(MPI_Fint request);$/;"	p
+PMPI_Request_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Request_free(MPI_Request *request);$/;"	p
+PMPI_Request_get_status	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Request_get_status(MPI_Request request, int *flag, $/;"	p
+PMPI_Rsend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Rsend(void *ibuf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Rsend_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Rsend_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Scan	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Scan(void *sendbuf, void *recvbuf, int count, $/;"	p
+PMPI_Scatter	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Scatter(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Scatterv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Scatterv(void *sendbuf, int *sendcounts, int *displs, $/;"	p
+PMPI_Send	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Send(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Send_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Send_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Sendrecv	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Sendrecv(void *sendbuf, int sendcount, MPI_Datatype sendtype, $/;"	p
+PMPI_Sendrecv_replace	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Sendrecv_replace(void * buf, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Ssend	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Ssend(void *buf, int count, MPI_Datatype datatype, int dest, $/;"	p
+PMPI_Ssend_init	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Ssend_init(void *buf, int count, MPI_Datatype datatype, $/;"	p
+PMPI_Start	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Start(MPI_Request *request);$/;"	p
+PMPI_Startall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Startall(int count, MPI_Request *array_of_requests);$/;"	p
+PMPI_Status_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Status_c2f(MPI_Status *c_status, MPI_Fint *f_status);$/;"	p
+PMPI_Status_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Status_f2c(MPI_Fint *f_status, MPI_Status *c_status);$/;"	p
+PMPI_Status_set_cancelled	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Status_set_cancelled(MPI_Status *status, int flag);$/;"	p
+PMPI_Status_set_elements	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Status_set_elements(MPI_Status *status, MPI_Datatype datatype,$/;"	p
+PMPI_Test	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Test(MPI_Request *request, int *flag, MPI_Status *status);$/;"	p
+PMPI_Test_cancelled	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Test_cancelled(MPI_Status *status, int *flag);$/;"	p
+PMPI_Testall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Testall(int count, MPI_Request array_of_requests[], int *flag, $/;"	p
+PMPI_Testany	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Testany(int count, MPI_Request array_of_requests[], int *index, int *flag, MPI_Status *status);$/;"	p
+PMPI_Testsome	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Testsome(int incount, MPI_Request array_of_requests[], $/;"	p
+PMPI_Topo_test	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Topo_test(MPI_Comm comm, int *status);$/;"	p
+PMPI_Type_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Type_c2f(MPI_Datatype datatype);$/;"	p
+PMPI_Type_commit	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_commit(MPI_Datatype *type);$/;"	p
+PMPI_Type_contiguous	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_contiguous(int count, MPI_Datatype oldtype, $/;"	p
+PMPI_Type_create_darray	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_darray(int size, int rank, int ndims, $/;"	p
+PMPI_Type_create_f90_complex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_f90_complex(int p, int r, MPI_Datatype *newtype);$/;"	p
+PMPI_Type_create_f90_integer	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_f90_integer(int r, MPI_Datatype *newtype);$/;"	p
+PMPI_Type_create_f90_real	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_f90_real(int p, int r, MPI_Datatype *newtype);$/;"	p
+PMPI_Type_create_hindexed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_hindexed(int count, int array_of_blocklengths[], $/;"	p
+PMPI_Type_create_hvector	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_hvector(int count, int blocklength, MPI_Aint stride, $/;"	p
+PMPI_Type_create_indexed_block	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_indexed_block(int count, int blocklength,$/;"	p
+PMPI_Type_create_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_keyval(MPI_Type_copy_attr_function *type_copy_attr_fn, $/;"	p
+PMPI_Type_create_resized	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_resized(MPI_Datatype oldtype, MPI_Aint lb, $/;"	p
+PMPI_Type_create_struct	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_struct(int count, int array_of_block_lengths[], $/;"	p
+PMPI_Type_create_subarray	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_create_subarray(int ndims, int size_array[], int subsize_array[], $/;"	p
+PMPI_Type_delete_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_delete_attr(MPI_Datatype type, int type_keyval);$/;"	p
+PMPI_Type_dup	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_dup(MPI_Datatype type, MPI_Datatype *newtype);$/;"	p
+PMPI_Type_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_extent(MPI_Datatype type, MPI_Aint *extent);$/;"	p
+PMPI_Type_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Datatype PMPI_Type_f2c(MPI_Fint datatype);$/;"	p
+PMPI_Type_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_free(MPI_Datatype *type);$/;"	p
+PMPI_Type_free_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_free_keyval(int *type_keyval);$/;"	p
+PMPI_Type_get_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_get_attr(MPI_Datatype type, int type_keyval, $/;"	p
+PMPI_Type_get_contents	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_get_contents(MPI_Datatype mtype, int max_integers, $/;"	p
+PMPI_Type_get_envelope	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_get_envelope(MPI_Datatype type, int *num_integers, $/;"	p
+PMPI_Type_get_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_get_extent(MPI_Datatype type, MPI_Aint *lb, $/;"	p
+PMPI_Type_get_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_get_name(MPI_Datatype type, char *type_name, $/;"	p
+PMPI_Type_get_true_extent	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_get_true_extent(MPI_Datatype datatype, MPI_Aint *true_lb, $/;"	p
+PMPI_Type_hindexed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_hindexed(int count, int array_of_blocklengths[], $/;"	p
+PMPI_Type_hvector	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_hvector(int count, int blocklength, MPI_Aint stride, $/;"	p
+PMPI_Type_indexed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_indexed(int count, int array_of_blocklengths[], $/;"	p
+PMPI_Type_lb	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_lb(MPI_Datatype type, MPI_Aint *lb);$/;"	p
+PMPI_Type_match_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_match_size(int typeclass, int size, MPI_Datatype *type);$/;"	p
+PMPI_Type_set_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_set_attr(MPI_Datatype type, int type_keyval, $/;"	p
+PMPI_Type_set_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_set_name(MPI_Datatype type, char *type_name);$/;"	p
+PMPI_Type_size	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_size(MPI_Datatype type, int *size);$/;"	p
+PMPI_Type_struct	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_struct(int count, int array_of_blocklengths[], $/;"	p
+PMPI_Type_ub	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_ub(MPI_Datatype mtype, MPI_Aint *ub);$/;"	p
+PMPI_Type_vector	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Type_vector(int count, int blocklength, int stride, $/;"	p
+PMPI_Unpack	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Unpack(void *inbuf, int insize, int *position, $/;"	p
+PMPI_Unpack_external	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Unpack_external (char *datarep, void *inbuf, MPI_Aint insize,$/;"	p
+PMPI_Unpublish_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Unpublish_name(char *service_name, MPI_Info info, $/;"	p
+PMPI_WTICK	/usr/lib/openmpi/include/mpif.h	/^      double precision MPI_WTIME, MPI_WTICK , PMPI_WTICK, PMPI_WTIME$/;"	v
+PMPI_WTICK	/usr/lib/openmpi/include/mpif.h	/^      external MPI_WTIME, MPI_WTICK , PMPI_WTICK, PMPI_WTIME$/;"	v
+PMPI_Wait	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Wait(MPI_Request *request, MPI_Status *status);$/;"	p
+PMPI_Waitall	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Waitall(int count, MPI_Request *array_of_requests, $/;"	p
+PMPI_Waitany	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Waitany(int count, MPI_Request *array_of_requests, $/;"	p
+PMPI_Waitsome	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Waitsome(int incount, MPI_Request *array_of_requests, $/;"	p
+PMPI_Win_c2f	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Fint PMPI_Win_c2f(MPI_Win win);$/;"	p
+PMPI_Win_call_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_call_errhandler(MPI_Win win, int errorcode);$/;"	p
+PMPI_Win_complete	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_complete(MPI_Win win);$/;"	p
+PMPI_Win_create	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_create(void *base, MPI_Aint size, int disp_unit, $/;"	p
+PMPI_Win_create_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_create_errhandler(MPI_Win_errhandler_fn *function, $/;"	p
+PMPI_Win_create_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_create_keyval(MPI_Win_copy_attr_function *win_copy_attr_fn, $/;"	p
+PMPI_Win_delete_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_delete_attr(MPI_Win win, int win_keyval);$/;"	p
+PMPI_Win_f2c	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  MPI_Win PMPI_Win_f2c(MPI_Fint win);$/;"	p
+PMPI_Win_fence	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_fence(int assert, MPI_Win win);$/;"	p
+PMPI_Win_free	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_free(MPI_Win *win);$/;"	p
+PMPI_Win_free_keyval	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_free_keyval(int *win_keyval);$/;"	p
+PMPI_Win_get_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_get_attr(MPI_Win win, int win_keyval, $/;"	p
+PMPI_Win_get_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_get_errhandler(MPI_Win win, MPI_Errhandler *errhandler);$/;"	p
+PMPI_Win_get_group	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_get_group(MPI_Win win, MPI_Group *group);$/;"	p
+PMPI_Win_get_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_get_name(MPI_Win win, char *win_name, int *resultlen);$/;"	p
+PMPI_Win_lock	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_lock(int lock_type, int rank, int assert, MPI_Win win);$/;"	p
+PMPI_Win_post	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_post(MPI_Group group, int assert, MPI_Win win);$/;"	p
+PMPI_Win_set_attr	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_set_attr(MPI_Win win, int win_keyval, void *attribute_val);$/;"	p
+PMPI_Win_set_errhandler	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_set_errhandler(MPI_Win win, MPI_Errhandler errhandler);$/;"	p
+PMPI_Win_set_name	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_set_name(MPI_Win win, char *win_name);$/;"	p
+PMPI_Win_start	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_start(MPI_Group group, int assert, MPI_Win win);$/;"	p
+PMPI_Win_test	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_test(MPI_Win win, int *flag);$/;"	p
+PMPI_Win_unlock	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_unlock(int rank, MPI_Win win);$/;"	p
+PMPI_Win_wait	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  int PMPI_Win_wait(MPI_Win win);$/;"	p
+PMPI_Wtick	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  double PMPI_Wtick(void);$/;"	p
+PMPI_Wtime	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC  double PMPI_Wtime(void);$/;"	p
+Stuttgart	/usr/lib/openmpi/include/mpif-common.h	/^! Copyright (c) 2004-2007 High Performance Computing Center Stuttgart, $/;"	v
+Stuttgart	/usr/lib/openmpi/include/mpif-config.h	/^! Copyright (c) 2004-2005 High Performance Computing Center Stuttgart, $/;"	v
+Stuttgart	/usr/lib/openmpi/include/mpif-mpi-io.h	/^! Copyright (c) 2004-2005 High Performance Computing Center Stuttgart, $/;"	v
+Stuttgart	/usr/lib/openmpi/include/mpif.h	/^! Copyright (c) 2004-2005 High Performance Computing Center Stuttgart, $/;"	v
+Systems	/usr/lib/openmpi/include/mpif-common.h	/^! Copyright (c) 2006      Cisco Systems, Inc.  All rights reserved.$/;"	v
+Systems	/usr/lib/openmpi/include/mpif-config.h	/^! Copyright (c) 2006      Cisco Systems, Inc.  All rights reserved.$/;"	v
+Systems	/usr/lib/openmpi/include/mpif-mpi-io.h	/^! Copyright (c) 2006      Cisco Systems, Inc.  All rights reserved.$/;"	v
+Systems	/usr/lib/openmpi/include/mpif.h	/^! Copyright (c) 2006-2007 Cisco Systems, Inc.  All rights reserved.$/;"	v
+_cancelled	/usr/lib/openmpi/include/mpi.h	/^  int _cancelled;$/;"	m	struct:ompi_status_public_t
+_count	/usr/lib/openmpi/include/mpi.h	/^  int _count;$/;"	m	struct:ompi_status_public_t
+configure	/usr/lib/openmpi/include/mpif-config.h	/^!     This file is generated from configure; do not edit it manually.$/;"	v
+however	/usr/lib/openmpi/include/mpif-common.h	/^!     First, however, include some output from configure.$/;"	v
+interface	/usr/lib/openmpi/include/mpif.h	/^!     These "external" statements are specific to the MPI F77 interface$/;"	p
+ompi_file_errhandler_fn	/usr/lib/openmpi/include/mpi.h	/^typedef void (ompi_file_errhandler_fn)(MPI_File *, int *, ...);$/;"	t
+ompi_file_errhandler_fn	/usr/lib/openmpi/include/mpi.h	/^typedef void (ompi_file_errhandler_fn)(struct ompi_file_t**, int *, ...);$/;"	t
+ompi_file_t	/usr/lib/openmpi/include/mpi.h	/^struct ompi_file_t;$/;"	x
+ompi_fortran_bogus_type_t	/usr/lib/openmpi/include/mpi.h	129;"	d
+ompi_fortran_integer_t	/usr/lib/openmpi/include/mpi.h	132;"	d
+ompi_mpi_2cplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_2cplex, ompi_mpi_2dblcplex;$/;"	x
+ompi_mpi_2dblcplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_2cplex, ompi_mpi_2dblcplex;$/;"	x
+ompi_mpi_2dblprec	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_2real, ompi_mpi_2dblprec;$/;"	x
+ompi_mpi_2int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_long_int, ompi_mpi_2int;$/;"	x
+ompi_mpi_2integer	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_2integer, ompi_mpi_longdbl_int;$/;"	x
+ompi_mpi_2real	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_2real, ompi_mpi_2dblprec;$/;"	x
+ompi_mpi_byte	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_char, ompi_mpi_byte;$/;"	x
+ompi_mpi_char	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_char, ompi_mpi_byte;$/;"	x
+ompi_mpi_character	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_dblprec, ompi_mpi_character;$/;"	x
+ompi_mpi_comm_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_communicator_t ompi_mpi_comm_null;$/;"	x
+ompi_mpi_comm_self	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_communicator_t ompi_mpi_comm_self;$/;"	x
+ompi_mpi_comm_world	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_communicator_t ompi_mpi_comm_world;$/;"	x
+ompi_mpi_complex16	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_complex16;$/;"	x
+ompi_mpi_complex32	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_complex32;$/;"	x
+ompi_mpi_complex8	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_complex8;$/;"	x
+ompi_mpi_cplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_cplex, ompi_mpi_packed;$/;"	x
+ompi_mpi_cxx_bool	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_cxx_bool;$/;"	x
+ompi_mpi_cxx_cplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_cxx_cplex, ompi_mpi_cxx_dblcplex;$/;"	x
+ompi_mpi_cxx_dblcplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_cxx_cplex, ompi_mpi_cxx_dblcplex;$/;"	x
+ompi_mpi_cxx_ldblcplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_cxx_ldblcplex;$/;"	x
+ompi_mpi_datatype_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned, ompi_mpi_datatype_null;$/;"	x
+ompi_mpi_dblcplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_short_int, ompi_mpi_dblcplex;$/;"	x
+ompi_mpi_dblprec	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_dblprec, ompi_mpi_character;$/;"	x
+ompi_mpi_double	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_float, ompi_mpi_double;$/;"	x
+ompi_mpi_double_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_float_int, ompi_mpi_double_int;$/;"	x
+ompi_mpi_errhandler_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_errhandler_t ompi_mpi_errhandler_null;$/;"	x
+ompi_mpi_errors_are_fatal	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_errhandler_t ompi_mpi_errors_are_fatal;$/;"	x
+ompi_mpi_errors_return	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_errhandler_t ompi_mpi_errors_return;$/;"	x
+ompi_mpi_file_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_file_t ompi_mpi_file_null;$/;"	x
+ompi_mpi_float	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_float, ompi_mpi_double;$/;"	x
+ompi_mpi_float_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_float_int, ompi_mpi_double_int;$/;"	x
+ompi_mpi_group_empty	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_group_t ompi_mpi_group_empty;$/;"	x
+ompi_mpi_group_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_group_t ompi_mpi_group_null;$/;"	x
+ompi_mpi_info_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_info_t ompi_mpi_info_null;$/;"	x
+ompi_mpi_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_int, ompi_mpi_logic;$/;"	x
+ompi_mpi_integer	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer, ompi_mpi_real;$/;"	x
+ompi_mpi_integer1	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer1;$/;"	x
+ompi_mpi_integer16	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer16;$/;"	x
+ompi_mpi_integer2	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer2;$/;"	x
+ompi_mpi_integer4	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer4;$/;"	x
+ompi_mpi_integer8	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer8;$/;"	x
+ompi_mpi_lb	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_ub, ompi_mpi_lb;$/;"	x
+ompi_mpi_ldblcplex	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned_long, ompi_mpi_ldblcplex;$/;"	x
+ompi_mpi_logic	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_int, ompi_mpi_logic;$/;"	x
+ompi_mpi_logical1	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_logical1;$/;"	x
+ompi_mpi_logical2	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_logical2;$/;"	x
+ompi_mpi_logical4	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_logical4;$/;"	x
+ompi_mpi_logical8	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_logical8;$/;"	x
+ompi_mpi_long	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_short, ompi_mpi_long;$/;"	x
+ompi_mpi_long_double	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_long_double;$/;"	x
+ompi_mpi_long_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_long_int, ompi_mpi_2int;$/;"	x
+ompi_mpi_long_long_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_wchar, ompi_mpi_long_long_int;$/;"	x
+ompi_mpi_longdbl_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_2integer, ompi_mpi_longdbl_int;$/;"	x
+ompi_mpi_op_band	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_band;$/;"	x
+ompi_mpi_op_bor	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_lor, ompi_mpi_op_bor;$/;"	x
+ompi_mpi_op_bxor	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_bxor;$/;"	x
+ompi_mpi_op_land	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_land;$/;"	x
+ompi_mpi_op_lor	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_lor, ompi_mpi_op_bor;$/;"	x
+ompi_mpi_op_lxor	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_lxor;$/;"	x
+ompi_mpi_op_max	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_max, ompi_mpi_op_min;$/;"	x
+ompi_mpi_op_maxloc	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_maxloc;$/;"	x
+ompi_mpi_op_min	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_max, ompi_mpi_op_min;$/;"	x
+ompi_mpi_op_minloc	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_minloc;$/;"	x
+ompi_mpi_op_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_null;$/;"	x
+ompi_mpi_op_prod	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_prod;$/;"	x
+ompi_mpi_op_replace	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_replace;$/;"	x
+ompi_mpi_op_sum	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_op_t ompi_mpi_op_sum;$/;"	x
+ompi_mpi_packed	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_cplex, ompi_mpi_packed;$/;"	x
+ompi_mpi_real	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_integer, ompi_mpi_real;$/;"	x
+ompi_mpi_real16	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_real16;$/;"	x
+ompi_mpi_real2	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_real2;$/;"	x
+ompi_mpi_real4	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_real4; $/;"	x
+ompi_mpi_real8	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_real8;$/;"	x
+ompi_mpi_short	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_short, ompi_mpi_long;$/;"	x
+ompi_mpi_short_int	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_short_int, ompi_mpi_dblcplex;$/;"	x
+ompi_mpi_signed_char	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_signed_char;$/;"	x
+ompi_mpi_ub	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_ub, ompi_mpi_lb;$/;"	x
+ompi_mpi_unsigned	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned, ompi_mpi_datatype_null;$/;"	x
+ompi_mpi_unsigned_char	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned_char;$/;"	x
+ompi_mpi_unsigned_long	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned_long, ompi_mpi_ldblcplex;$/;"	x
+ompi_mpi_unsigned_long_long	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned_long_long;$/;"	x
+ompi_mpi_unsigned_short	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_unsigned_short;$/;"	x
+ompi_mpi_wchar	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_datatype_t ompi_mpi_wchar, ompi_mpi_long_long_int;$/;"	x
+ompi_mpi_win_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_win_t ompi_mpi_win_null;$/;"	x
+ompi_request_null	/usr/lib/openmpi/include/mpi.h	/^OMPI_DECLSPEC extern struct ompi_predefined_request_t ompi_request_null;$/;"	x
+ompi_status_public_t	/usr/lib/openmpi/include/mpi.h	/^struct ompi_status_public_t { $/;"	s
+ompi_status_public_t	/usr/lib/openmpi/include/mpi.h	/^typedef struct ompi_status_public_t ompi_status_public_t;$/;"	t	typeref:struct:ompi_status_public_t
+stuff	/usr/lib/openmpi/include/mpif-config.h	/^!     Include the MPI I\/O stuff, if needed$/;"	v

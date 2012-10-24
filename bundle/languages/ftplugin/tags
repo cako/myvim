@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+<C-a>	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^imap <C-a> <C-K>a^$/;"	m
+<C-e>	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^imap <C-e> <C-K>e'$/;"	m
+<C-s>	/home/cako/.vim/bundle/languages/ftplugin/c.vim	/^imap <C-s> <Esc><C-w><C-]>$/;"	m
+<C-s>	/home/cako/.vim/bundle/languages/ftplugin/c.vim	/^map <C-s> <C-w><C-]>$/;"	m
+<F2>	/home/cako/.vim/bundle/languages/ftplugin/cc.vim	/^imap <F2> <Esc>GVgg<C-c><C-o><C-O>$/;"	m
+<F2>	/home/cako/.vim/bundle/languages/ftplugin/cc.vim	/^map <F2> GVgg<C-c><C-o><C-O>$/;"	m
+<F2>	/home/cako/.vim/bundle/languages/ftplugin/html.vim	/^imap <F2> <Esc>;w<CR><Esc>;!firefox % &<CR>$/;"	m
+<F2>	/home/cako/.vim/bundle/languages/ftplugin/html.vim	/^map <F2> ;w<CR><Esc>;!firefox % &<CR>$/;"	m
+<F2>	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv $/;"	m
+<F2>	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^map <F2> ;w<CR><localleader>ll<localleader>lv$/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/html.vim	/^imap <F3> <Esc>;w<CR><Esc>;W3cValidate<CR>$/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/html.vim	/^map <F3> ;w<CR><Esc>;W3cValidate<CR>$/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/perl.vim	/^imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!.\/% $/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/perl.vim	/^map <F3> ;w<CR>;!chmod a+x<CR>;!.\/% $/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^imap <F3> <Esc>;w<CR>;!chmod a+x<CR>;!python %$/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^map <F3> ;w<CR>;!chmod a+x<CR>;!python %$/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^imap <F3> <Esc>;w<CR><localleader>ll;!sage %:r.sage<CR><F2>$/;"	m
+<F3>	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^map <F3> ;w<CR><localleader>ll;!sage %:r.sage<CR><F2>$/;"	m
+<F4>	/home/cako/.vim/bundle/languages/ftplugin/c.vim	/^imap <F4> <Esc>;w<CR>;!gcc %:p -o %:p:rC -lmpi -I\/usr\/lib\/openmpi\/include -I\/usr\/lib\/openmpi\/include\/openmpi && mpirun -np 4 %:p:rC<CR>$/;"	m
+<F4>	/home/cako/.vim/bundle/languages/ftplugin/c.vim	/^map <F4> ;w<CR>;!gcc %:p -o %:p:rC -lmpi -I\/usr\/lib\/openmpi\/include -I\/usr\/lib\/openmpi\/include\/openmpi && mpirun -np 4 %:p:rC<CR>$/;"	m
+<F5>	/home/cako/.vim/bundle/languages/ftplugin/c.vim	/^imap <F5> <Esc>;Tlist<CR><C-w><C-w>$/;"	m
+<F5>	/home/cako/.vim/bundle/languages/ftplugin/c.vim	/^map <F5> ;Tlist<CR><C-w><C-w>$/;"	m
+<M-F3>	/home/cako/.vim/bundle/languages/ftplugin/perl.vim	/^imap <M-F3> <Esc>;w<CR><Esc>;!.\/<Up><CR>$/;"	m
+<M-F3>	/home/cako/.vim/bundle/languages/ftplugin/perl.vim	/^map <M-F3> ;w<CR>;!.\/%<Up><CR>$/;"	m
+<M-F3>	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^imap <M-F3> <Esc>;w<CR><Esc>;!python<Up><CR>$/;"	m
+<M-F3>	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^map <M-F3> ;w<CR>;!python<Up><CR>$/;"	m
+<localleader>a	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^imap <localleader>a <C-K>a?$/;"	m
+<localleader>li	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^map <localleader>li ;set invlist<CR>$/;"	m
+<localleader>pd	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^imap <localleader>pd <Esc>yiw;Pydoc<CR>$/;"	m
+<localleader>pd	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^map  <localleader>pd yiw;Pydoc<CR>$/;"	m
+EFM	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^imap EFM EFM<Esc>V>%i$/;"	m
+InsertArticle	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^function! InsertArticle()$/;"	f
+InsertBeamer	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^function! InsertBeamer()$/;"	f
+InsertPython	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^function! InsertPython()$/;"	f
+Pydoc	/home/cako/.vim/bundle/languages/ftplugin/python.vim	/^command! -nargs=0 Pydoc exe '!pydoc' @$/;"	c
+SetEnglishLanguage	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^function! SetEnglishLanguage()$/;"	f
+SetPortugueseLanguage	/home/cako/.vim/bundle/languages/ftplugin/tex.vim	/^function! SetPortugueseLanguage()$/;"	f
