@@ -14,7 +14,7 @@ else
     highlight SpellBad term=reverse cterm=underline
 endif
 
-setlocal textwidth=80
+setlocal textwidth=0
 setlocal iskeyword+=\
 
 imap <F2> <Esc>;w<CR><localleader>ll<localleader>lv 
