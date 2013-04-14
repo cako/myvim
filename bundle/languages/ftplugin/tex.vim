@@ -23,10 +23,6 @@ map <F2> ;w<CR><localleader>ll<localleader>lv
 imap <F3> <Esc>;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
 map <F3> ;w<CR><localleader>ll;!sage %:r.sage<CR><F2>
 
-imap <localleader>a <C-K>a?
-imap <C-a> <C-K>a^
-imap <C-e> <C-K>e'
-
 "For vim-latex
 set grepprg=grep\ -nH\ $*
 filetype indent on
@@ -58,7 +54,6 @@ call SetPortugueseLanguage()
 "LaTeX-Suite mappings
 call IMAP('EFM', "\\begin{frame}\n\\frametitle{<++>}\n\\end{frame}", 'tex')
 call IMAP('`o', "\\omega", 'tex')
-call IMAP('ãst', "\\ast", 'tex')
 
 imap EFM EFM<Esc>V>%i
 "imap EIT EIT<Esc>V>A
