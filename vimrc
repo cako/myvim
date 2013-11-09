@@ -17,9 +17,9 @@ au BufRead,BufNewFile *.cc set ft=cc.c
 au BufRead,BufNewFile *.xhtml set ft=xhtml.html
 au BufRead,BufNewFile *.htm set ft=htm.html
 au BufRead,BufNewFile *.qrc set ft=xml
-au BufNewFile,BufRead * call CheckForCustomConfiguration()
-au BufNewFile,BufRead .vim.custom set syntax=vim
 au BufNewFile,BufRead SConstruct set ft=python
+au BufNewFile,BufRead .vim.custom set syntax=vim
+au BufNewFile,BufRead * call CheckForCustomConfiguration()
 "au FileType python compiler pylint
 "au BufWritePost *.py !pyflakes %
 
@@ -76,6 +76,7 @@ set spellsuggest=best,3
 set incsearch
 set ignorecase
 "set highlight
+nnoremap <silent> <C-l> ;nohl<CR><C-l>
 
 set showcmd
 set showmode
