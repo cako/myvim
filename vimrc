@@ -6,15 +6,20 @@ Plug 'cako/vim-latex'
 Plug 'ervandew/supertab'
 Plug 'davidhalter/jedi-vim'
 Plug 'JuliaEditorSupport/julia-vim'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'ternjs/tern_for_vim'
-Plug '1995eaton/vim-better-javascript-completion'
-Plug 'moll/vim-node'
-"Plug 'scrooloose/syntastic'
-"Plug 'Shougo/neocomplete'
-call plug#end()
+"Plug 'jelera/vim-javascript-syntax'
+"Plug 'ternjs/tern_for_vim'
+"Plug '1995eaton/vim-better-javascript-completion'
+"Plug 'moll/vim-node'
+Plug 'scrooloose/syntastic'
+Plug 'Shougo/neocomplete'
 "Plug 'rkulla/pydiction'
+"Plug 'Shougo/deoplete.nvim'
+"Plug 'roxma/nvim-yarp'
+"Plug 'roxma/vim-hug-neovim-rpc'
+"Plug 'zchee/deoplete-jedi'
+call plug#end()
 
+let g:deoplete#enable_at_startup = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:neocomplete#enable_at_startup = 1
 let g:syntastic_check_on_wq = 1

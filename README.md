@@ -26,4 +26,8 @@ Create symlinks for the config files,
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
+Open vim and run
+
+    :PlugInstall
+
 ### And you are done!
